@@ -1,0 +1,237 @@
+Static vs Contextual Embeddings:
+Anisotropy, Morphology, Synonyms &
+Antonyms
+Guillaume Wisniewski
+guillaume.wisniewski@u-paris.fr
+February 2026
+This practical is somewhat longer (and perhaps slightly more demanding)
+than the previous ones, even though I have made a genuine effort to restrain
+myself when it comes to the number of questions I would have liked to ask.
+That said, by now you should be sufficiently agile in Python and machine
+learning to tackle genuinely interesting problems. Do, however, resist the
+temptation to start coding the night before the deadline.
+It may also be wise to give some thought to how best to organise your code. In
+particular, saving computed embeddings rather than recomputing them each
+time can make your experiments both more efficient and more reproducible.
+By this stage, you are also familiar with a number of excellent tools for setting up complete training and analysis pipelines, this would be a very good
+opportunity to put them to use.
+In this practical, we are going to have some fun (yes, I do insist) discovering how to extract
+the embeddings computed by BERT and to identify some of their properties, often described,
+somewhat pompously, as their geometry. The practical is organised into three main parts : an
+investigation of embedding anisotropy, a comparison of the representations of words belonging
+to the same morphological family, and a comparison of the representations of semantically related words (synonyms, antonyms, and the like). It is preceded by a liminary fourth step devoted
+to the constitution of the necessary resources, because embeddings, regrettably, do not generate
+themselves. In order to maintain at least the illusion of a controlled experiment, we will also rely
+on static word embeddings as a baseline.
+The aim is twofold : first, to learn how to handle some essential tools (notably the Hugging
+Face hugging-face library), and second, to explore genuinely interesting questions (at least from
+my point of view !) without requiring unreasonable computational resources.
+
+1
+
+As usual, this is an open-ended assignment : if you come across questions that genuinely
+interest you, or if you find more elegant or imaginative ways of answering my questions than the
+ones I suggest, please feel free to pursue them.
+
+1 DBuilding the Necessary Tools and Corpora (Because They
+Don’t Build Themselves)
+The goal of the first part of the practical is to compare
+the embeddings of words belonging to the same morphological family, and to assess whether
+(and how) morphological relatedness is encoded in static embeddings (GloVe) and contextual
+embeddings (BERT). This necessarily presupposes two things : first, that we actually have access
+to well-defined morphological families, and second, that each form in a family occurs often
+enough in natural contexts to allow for meaningful comparisons.
+To this end, I have most generously uploaded a dataset to the course page for your use. This
+corpus contains an annotated list of English morphological families (morph_families.tsv).
+Each line contains :
+Morphological Families Dataset
+
+— a lemma,
+— a list of morphologically related forms,
+— a family type :
+— inflection (e.g. walk / walked / walking),
+— derivation (e.g. legal / illegal),
+— mixed (inflection + derivation),
+— irregular (e.g. go / went),
+— a transformation type (e.g., regular verb inflection, nominalisation in -tion, negative prefixation).
+Before any analysis, you must retain only words that appear both in the GloVe vocabulary and
+in the corpus used for contextual extraction (WikiText-103 1 ) at least N times. The objective is
+to ensure that each form in a family has a sufficient number of contextual occurrences to support
+statistical analysis, rather than anecdotal observations.
+All the following steps must be carried out on the WikiText-103 corpus in order to obtain
+sufficiently varied and naturally occurring contextual examples. A pragmatic (and not entirely
+innocent) reason for this choice is that BERT was trained on Wikipedia data ; this raises the
+interesting methodological question of whether observed regularities reflect general properties
+of contextual representations, or artefacts of overlap between pre-training data and evaluation
+corpus—a point you should keep in mind when interpreting your results.
+
+1. datasets.load_dataset("wikitext", "wikitext-103-v1"), train split only
+
+2
+
+First, clean the corpus by removing all empty lines and all lines beginning with =, as these
+typically correspond to section headings. Discard lines containing fewer than five tokens. The remaining text should then be segmented into sentences, for instance using spacy or a comparable
+sentence segmentation tool.
+For each target word w, perform case-insensitive matching in the cleaned corpus. Only fullword matches must be considered (i.e. partial matches within longer words should be excluded).
+Sentences longer than 40 tokens must be discarded in order to control computational cost and
+contextual variability. Duplicate sentences must also be removed.
+For each target word, collect all matching sentences. If at least 50 sentences are found, randomly sample exactly 50 using a fixed random seed (seed = 42) to ensure reproducibility. If
+between 10 and 49 sentences are available, retain all of them and flag the corresponding word as
+low-frequency. If fewer than 10 sentences are found, exclude the word from contextual analyses
+and document the exclusion.
+To complement the previous analysis, we shall
+also consider a corpus in which each word is explicitly paired with one of its synonyms and one
+of its antonyms. As this is highly instructive (and most certainly not because I am improvising
+at the last minute), I shall simply provide you with the instructions to construct this corpus
+yourselves.
+You should aim for approximately 200 synonym pairs and 200 antonym pairs, ensuring, as
+before, that both words in each pair occur in a sufficient number of WikiText sentences and are
+present in the GloVe vocabulary.”
+Begin by extracting all synsets from WordNet and, for each synset, collect all pairs of distinct
+lemmas belonging to that synset. These pairs will constitute candidate synonym pairs. Ensure
+that pairs are treated as unordered (i.e. do not include both (w1 , w2 ) and (w2 , w1 )) and remove
+duplicates.
+For antonyms, iterate over all lemmas in WordNet and retrieve their antonyms via the antonyms()
+relation. Construct unordered word pairs whenever an antonym link exists and remove duplicates.
+After constructing the raw lists, apply filtering. Retain only word pairs such that both words :
+(i) appear in the GloVe vocabulary, and (ii) occur in the WikiText-103 corpus with sufficient
+frequency (you must define and justify a minimum frequency threshold).
+Building the Synonym and Antonym Lists
+
+1.1 Extracting BERT Word Embeddings
+The first step of this practical (after the corpus construction, which is tedious enough that we
+shall promptly forget about it and therefore not dignify it with a step number) is to implement a
+function that computes BERT-based embeddings.
+Using the code shown in the slides as inspiration (or so I believe), write a function that takes
+as input a sentence, a layer number, and a target word, and returns a vector representing the
+embedding of that word as computed by BERT on that specific layer.
+
+3
+
+Since it would be a shame if things were too straightforward, you will have to deal with
+subword tokenisation. A single surface word may be split into several sub-tokens by the BERT
+tokenizer. In such cases, your function must return the mean-pooled embedding, i.e. the average
+of the embeddings of the corresponding sub-tokens.
+
+2 Anisotropy and the geometry of word embeddings
+The goal of this first part of the practical is to characterise the geometry of the embedding
+space : that is, how word representations computed at different layers are distributed in R1024 .
+We will compare two models, GloVe and BERT. To keep things manageable, you may restrict
+the analysis of BERT to layers 1, 6, and 12 (although analysing all layers is highly informative,
+considerably more fun, and extremely instructive).
+To this end, we will focus on the distribution of similarities between randomly selected word
+representations. The underlying idea is that, by considering words sampled at random, we can
+probe the structure of the representation space as a whole, rather than focusing on a small, handpicked subset of lexical items.
+M , we will
+More precisely, given a set of word embeddings sampled from your corpus vi i=1
+examine three metrics designed to quantify the properties of this distribution :
+— Mean pairwise cosine :
+A1 =
+
+X
+2
+cos(vi ,v j )
+M(M − 1) i< j
+
+PM
+vi . Consider the distribution of cos(vi , µ),
+— Cosine to the mean direction : let µ = M1 i=1
+and report at least the mean and standard deviation and plot the distribution.
+— PCA dominance : run PCA on {vi } and report the explained variance ratios of the first k
+P
+components (e.g. k = 10), as well as the cumulative explained variance kℓ=1 EVRℓ .
+Now that we have established the definitions, we can begin working in earnest and move on
+to the heart of the matter.
+1. Provide an intuitive interpretation of the first three metrics. For each metric, explain what
+it is trying to measure and how its value should be interpreted (e.g. what does a “large”
+vs. “small” value indicate about the geometry of the embedding space ?).
+2. Calculate, on each layer, the three metrics for BERT and GloVe embeddings. In particular,
+how many distinct vector pairs must be considered to compute A1 ? Report the results
+obtained from the data you collected in the previous section.
+3. Recompute the metrics after either :
+— Mean centring : v ← v − µ
+— Mean centering and normalization by the euclidean norm : v ← v/∥v∥2
+
+4
+
+— Removal of the top principal components :
+m
+X
+v←v−
+(u⊤j v) u j
+
+for m ∈ {1,2,5}
+
+j=1
+
+4. Interprete the results obtained from the data you collected in the previous section. What
+can you conclude ?
+
+3 Morphological encoding
+We now turn to the encoding of morphological information. In this section, we examine how
+morphologically related forms are organised in the representation space. Rather than considering
+randomly selected word pairs, as in the previous section, the central idea here is to compare
+the distances between forms belonging to the same morphological family with those observed
+between forms drawn from different families.
+As before, we will start by defining a set of metrics to characterise these distances, before you
+cheerfully move on to the experiments proper.
+For each lemma family F in the corpus “we” (yes, I am
+well aware that most of the actual work was done by you) have constructed in the first section,
+for instance {walk, walks, walked, walking}, compute all pairwise cosine similarities between
+forms within the family (intra-family distances). As a point of comparison, sample a matched
+set of random word pairs drawn from different families (inter-family distances).
+You should then report the resulting similarity distributions using boxplots or violin plots,
+together with an effect size measure (Cohen’s d or Cliff’s δ) and corresponding confidence intervals. Finally, assess the statistical significance of the observed differences using a test appropriate
+for non-normal distributions, such as a Mann–Whitney test or a permutation test.
+(i) Intra- vs inter-family distances.
+
+For a given morphological transformation (e.g. +ed, +ing, or plural
++s), define the corresponding offset vector as
+(ii) Offset consistency.
+
+∆+ed (w) = v(w+ed) − v(w).
+Compute cosine similarities between offset vectors obtained from different base words, for
+example
+
+cos ∆+ed (w1 ), ∆+ed (w2 ) ,
+across a large set of verbs. Report the mean similarity together with confidence intervals, and
+compare the results across models and, in the case of BERT, across layers.
+
+5
+
+As a lightweight probing task, train a logistic regression classifier to predict
+a single morphological property, such as verb tense (past vs present) or number (singular vs
+plural), using word embeddings as input. The classifier should be evaluated using stratified 5-fold
+cross-validation. Report accuracy and macro-F1, together with confidence intervals obtained by
+bootstrapping across folds (for the more courageous among you), and compare performance
+across BERT layers and against GloVe.
+(iii) Probing
+
+5. Implement the three steps described above. In your report, you should present both the
+results you obtain and your interpretation of them. In each case, make sure to compare
+results obtained from the raw embeddings with those obtained after applying a method of
+your choice to reduce or remove anisotropy.
+
+4 Synonyms vs antonyms
+A natural continuation of the previous analyses is to examine how the representation space
+encodes relations of synonymy and antonymy. Without too much fear of spoiling the outcome,
+we can even formulate a working hypothesis : distributive representations tend to place antonyms
+close to synonyms.
+6. Explain why this hypothesis is, at the same time, entirely expected once one accepts the
+assumptions underlying distributional semantics (there is a slide of crystal-clear clarity on
+this point in the second set of course slides, which I assume you know by heart), and yet
+deeply counter-intuitive from a semantic point of view.
+(i) Similarity separation.
+
+7. Using the corpus constructed in the first step, compute cosine similarities for synonym
+pairs, antonym pairs, and randomly selected word pairs as a baseline. Compare the resulting similarity distributions across GloVe and the different layers of BERT.
+(ii) Neighbourhood evaluation.
+
+8. For a set of 50 target words, compute their top-k nearest neighbours (k = 10). Estimate
+how often an antonym appears among the top-k neighbours when a synonym of the target
+word is present in the vocabulary. Compare the results obtained before and after applying
+a de-anisotropisation method.
+
+6
+
+
