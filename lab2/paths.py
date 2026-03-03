@@ -46,5 +46,9 @@ class ProjectPaths:
 
     @property
     def morph_families_path(self) -> Path:
-        return self.data_dir / "morph_families.tsv"
-
+        # Prefer `data/` but accept repo-root placement for convenience.
+        data_path = self.data_dir / "morph_families.tsv"
+        root_path = self.repo_root / "morph_families.tsv"
+        if data_path.exists() or not root_path.exists():
+            return data_path
+        return root_path

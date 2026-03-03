@@ -22,6 +22,8 @@ python -m pip install -r requirements.txt
 data/morph_families.tsv
 ```
 
+If you already placed it in the repo root as `morph_families.tsv`, the code will also pick that up.
+
 4) Download a GloVe text file (recommended default: `glove.6B.100d.txt`) into:
 
 ```text
@@ -52,6 +54,12 @@ python -m lab2 compute-embeddings
 python -m lab2 run-analyses
 ```
 
+One-shot run + markdown report (includes `pytest` output):
+
+```bash
+python -m lab2 generate-report --out artifacts/run_report.md
+```
+
 Outputs:
 - `artifacts/results/` — JSON/CSV summaries
 - `artifacts/figures/` — plots (PNG)
@@ -65,3 +73,5 @@ Outputs:
 - For contextual embeddings, this code uses **WikiText-103 (train split)** and implements the
   exact sampling rules in the PDF (≤40 tokens, de-dup, sample 50 with seed 42, etc.).
 
+- Offline fallback: if you cannot install `datasets`, you can place the WikiText-103 train split
+  as plain text at `data/wikitext103_train.txt` and the pipeline will read from it.

@@ -27,6 +27,23 @@ def build_parser() -> argparse.ArgumentParser:
     sub.add_parser("build-synant", help="Build synonym/antonym pairs from WordNet.")
     sub.add_parser("compute-embeddings", help="Compute and cache GloVe + BERT embeddings.")
     sub.add_parser("run-analyses", help="Run all analyses (anisotropy/morphology/syn-ant).")
+    rep = sub.add_parser("generate-report", help="Run the full pipeline and write a markdown report.")
+    rep.add_argument(
+        "--out",
+        type=Path,
+        default=None,
+        help="Output report path (default: artifacts/run_report.md).",
+    )
+    rep.add_argument(
+        "--no-run",
+        action="store_true",
+        help="Do not run the pipeline steps; only summarize existing artifacts.",
+    )
+    rep.add_argument(
+        "--no-pytest",
+        action="store_true",
+        help="Skip running pytest.",
+    )
 
     return p
 
@@ -65,5 +82,17 @@ def main(argv: list[str] | None = None) -> int:
         run_analyses(config=config, paths=paths)
         return 0
 
-    raise AssertionError(f"Unhandled cmd: {args.cmd}")
+    if args.cmd == "generate-report":
+        from lab2.reporting import generate_report
 
+        out_path = args.out if args.out is not None else (paths.artifacts_dir / "run_report.md")
+        generate_report(
+            config=config,
+            paths=paths,
+            out_path=out_path,
+            run_pipeline=not args.no_run,
+            run_pytest=not args.no_pytest,
+        )
+        return 0
+
+    raise AssertionError(f"Unhandled cmd: {args.cmd}")
