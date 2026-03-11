@@ -30,7 +30,7 @@ wheels/
 /data/manifests
 /data/predictions
 /metrics
-/plots
+# /plots
 .dvc/cache
 .dvc/tmp
 
