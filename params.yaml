@@ -1,6 +1,7 @@
 # Pipeline parameters
 languages:
   - en
+  - fr
 
 # SNR levels (in dB) for noise addition
 snr_levels:

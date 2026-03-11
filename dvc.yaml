@@ -79,6 +79,71 @@ stages:
       - ${manifest_dir}/en/snr_-10.jsonl
       - ${noisy_dir}/en/snr_-10.0
 
+  # Stage 2b: Add noise at different SNR levels for fr
+  add_noise_fr_20:
+    cmd: python scripts/add_noise.py
+      --input-manifest ${manifest_dir}/fr/clean.jsonl
+      --output-manifest ${manifest_dir}/fr/snr_20.jsonl
+      --snr-db 20
+      --noisy-dir ${noisy_dir}
+      --seed ${seed}
+    deps:
+      - scripts/add_noise.py
+      - ${manifest_dir}/fr/clean.jsonl
+    params:
+      - seed
+    outs:
+      - ${manifest_dir}/fr/snr_20.jsonl
+      - ${noisy_dir}/fr/snr_20.0
+
+  add_noise_fr_10:
+    cmd: python scripts/add_noise.py
+      --input-manifest ${manifest_dir}/fr/clean.jsonl
+      --output-manifest ${manifest_dir}/fr/snr_10.jsonl
+      --snr-db 10
+      --noisy-dir ${noisy_dir}
+      --seed ${seed}
+    deps:
+      - scripts/add_noise.py
+      - ${manifest_dir}/fr/clean.jsonl
+    params:
+      - seed
+    outs:
+      - ${manifest_dir}/fr/snr_10.jsonl
+      - ${noisy_dir}/fr/snr_10.0
+
+  add_noise_fr_0:
+    cmd: python scripts/add_noise.py
+      --input-manifest ${manifest_dir}/fr/clean.jsonl
+      --output-manifest ${manifest_dir}/fr/snr_0.jsonl
+      --snr-db 0
+      --noisy-dir ${noisy_dir}
+      --seed ${seed}
+    deps:
+      - scripts/add_noise.py
+      - ${manifest_dir}/fr/clean.jsonl
+    params:
+      - seed
+    outs:
+      - ${manifest_dir}/fr/snr_0.jsonl
+      - ${noisy_dir}/fr/snr_0.0
+
+  add_noise_fr_-10:
+    cmd: python scripts/add_noise.py
+      --input-manifest ${manifest_dir}/fr/clean.jsonl
+      --output-manifest ${manifest_dir}/fr/snr_-10.jsonl
+      --snr-db -10
+      --noisy-dir ${noisy_dir}
+      --seed ${seed}
+    deps:
+      - scripts/add_noise.py
+      - ${manifest_dir}/fr/clean.jsonl
+    params:
+      - seed
+    outs:
+      - ${manifest_dir}/fr/snr_-10.jsonl
+      - ${noisy_dir}/fr/snr_-10.0
+
   # Stage 3: Run inference on clean audio
   inference_clean:
     foreach: ${languages}
@@ -148,6 +213,59 @@ stages:
     outs:
       - ${predictions_dir}/en/snr_-10.jsonl
 
+  # Stage 4b: Run inference on noisy audio for fr
+  inference_noisy_fr_20:
+    cmd: python scripts/inference.py
+      --input-manifest ${manifest_dir}/fr/snr_20.jsonl
+      --output-manifest ${predictions_dir}/fr/snr_20.jsonl
+      --model-name ${model_name}
+    deps:
+      - scripts/inference.py
+      - ${manifest_dir}/fr/snr_20.jsonl
+    params:
+      - model_name
+    outs:
+      - ${predictions_dir}/fr/snr_20.jsonl
+
+  inference_noisy_fr_10:
+    cmd: python scripts/inference.py
+      --input-manifest ${manifest_dir}/fr/snr_10.jsonl
+      --output-manifest ${predictions_dir}/fr/snr_10.jsonl
+      --model-name ${model_name}
+    deps:
+      - scripts/inference.py
+      - ${manifest_dir}/fr/snr_10.jsonl
+    params:
+      - model_name
+    outs:
+      - ${predictions_dir}/fr/snr_10.jsonl
+
+  inference_noisy_fr_0:
+    cmd: python scripts/inference.py
+      --input-manifest ${manifest_dir}/fr/snr_0.jsonl
+      --output-manifest ${predictions_dir}/fr/snr_0.jsonl
+      --model-name ${model_name}
+    deps:
+      - scripts/inference.py
+      - ${manifest_dir}/fr/snr_0.jsonl
+    params:
+      - model_name
+    outs:
+      - ${predictions_dir}/fr/snr_0.jsonl
+
+  inference_noisy_fr_-10:
+    cmd: python scripts/inference.py
+      --input-manifest ${manifest_dir}/fr/snr_-10.jsonl
+      --output-manifest ${predictions_dir}/fr/snr_-10.jsonl
+      --model-name ${model_name}
+    deps:
+      - scripts/inference.py
+      - ${manifest_dir}/fr/snr_-10.jsonl
+    params:
+      - model_name
+    outs:
+      - ${predictions_dir}/fr/snr_-10.jsonl
+
   # Stage 5: Evaluate clean audio
   evaluate_clean:
     foreach: ${languages}
@@ -205,6 +323,51 @@ stages:
       - ${predictions_dir}/en/snr_-10.jsonl
     metrics:
       - ${metrics_dir}/en/snr_-10.json:
+          cache: false
+
+  # Stage 6b: Evaluate noisy audio for fr
+  evaluate_noisy_fr_20:
+    cmd: python scripts/evaluate.py
+      --input-manifest ${predictions_dir}/fr/snr_20.jsonl
+      --output-metrics ${metrics_dir}/fr/snr_20.json
+    deps:
+      - scripts/evaluate.py
+      - ${predictions_dir}/fr/snr_20.jsonl
+    metrics:
+      - ${metrics_dir}/fr/snr_20.json:
+          cache: false
+
+  evaluate_noisy_fr_10:
+    cmd: python scripts/evaluate.py
+      --input-manifest ${predictions_dir}/fr/snr_10.jsonl
+      --output-metrics ${metrics_dir}/fr/snr_10.json
+    deps:
+      - scripts/evaluate.py
+      - ${predictions_dir}/fr/snr_10.jsonl
+    metrics:
+      - ${metrics_dir}/fr/snr_10.json:
+          cache: false
+
+  evaluate_noisy_fr_0:
+    cmd: python scripts/evaluate.py
+      --input-manifest ${predictions_dir}/fr/snr_0.jsonl
+      --output-metrics ${metrics_dir}/fr/snr_0.json
+    deps:
+      - scripts/evaluate.py
+      - ${predictions_dir}/fr/snr_0.jsonl
+    metrics:
+      - ${metrics_dir}/fr/snr_0.json:
+          cache: false
+
+  evaluate_noisy_fr_-10:
+    cmd: python scripts/evaluate.py
+      --input-manifest ${predictions_dir}/fr/snr_-10.jsonl
+      --output-metrics ${metrics_dir}/fr/snr_-10.json
+    deps:
+      - scripts/evaluate.py
+      - ${predictions_dir}/fr/snr_-10.jsonl
+    metrics:
+      - ${metrics_dir}/fr/snr_-10.json:
           cache: false
 
   # Stage 7: Plot results

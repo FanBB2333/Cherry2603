@@ -17,7 +17,12 @@
       "Bash(ls -la /home/l1ght/repos/Cherry2603/ | grep -E \"\\\\.md$|docs\")",
       "Bash(ls -lh /home/l1ght/repos/Cherry2603/*.md /home/l1ght/repos/Cherry2603/docs/*.md 2>/dev/null)",
       "Bash(source venv/bin/activate && dvc repro -f 2>&1 | head -50)",
-      "Bash(cat /home/l1ght/repos/Cherry2603/metrics/en/*.json | jq -s '.')"
+      "Bash(cat /home/l1ght/repos/Cherry2603/metrics/en/*.json | jq -s '.')",
+      "Bash(source venv/bin/activate && python scripts/convert_common_voice.py --cv-dir data/cv-corpus-24.0-2025-12-05/fr --output-dir data/raw --lang fr --max-samples 100)",
+      "Bash(source venv/bin/activate && dvc repro -f 2>&1)",
+      "Bash(source venv/bin/activate && dvc repro 2>&1)",
+      "Bash(source venv/bin/activate && dvc repro plot_results -f)",
+      "Bash(echo \"=== English Results ===\" && cat /home/l1ght/repos/Cherry2603/metrics/en/*.json | jq -r '.avg_per' | paste -sd ' ' && echo -e \"\\\\n=== French Results ===\" && cat /home/l1ght/repos/Cherry2603/metrics/fr/*.json | jq -r '.avg_per' | paste -sd ' ')"
     ]
   }
 }
