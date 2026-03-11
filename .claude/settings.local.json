@@ -2,7 +2,18 @@
   "permissions": {
     "allow": [
       "Bash(pdftotext:*)",
-      "WebFetch(domain:datacollective.mozillafoundation.org)"
+      "WebFetch(domain:datacollective.mozillafoundation.org)",
+      "Bash(source venv/bin/activate && python scripts/convert_common_voice.py --cv-dir data/cv-corpus-24.0-2025-12-05/en --output-dir data/raw --lang en --max-samples 100)",
+      "Bash(source venv/bin/activate && dvc repro)",
+      "Bash(source venv/bin/activate && dvc init)",
+      "Bash(source venv/bin/activate && pip install dvc)",
+      "Bash(source venv/bin/activate && dvc repro 2>&1 | head -50)",
+      "Bash(source venv/bin/activate && dvc repro 2>&1 | head -100)",
+      "Bash(source venv/bin/activate && pip install phonemizer protobuf)",
+      "Bash(nvidia-smi)",
+      "Bash(source venv/bin/activate && dvc repro 2>&1 | tee /tmp/dvc_run.log)",
+      "Bash(source venv/bin/activate && dvc metrics show)",
+      "Bash(cat metrics/en/*.json)"
     ]
   }
 }

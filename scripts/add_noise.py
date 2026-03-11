@@ -73,7 +73,7 @@ def process_manifest(input_manifest: Path, output_manifest: Path,
 
             # Update manifest entry
             new_entry = entry.copy()
-            new_entry['wav_path'] = str(noisy_path.relative_to(Path.cwd()))
+            new_entry['wav_path'] = str(noisy_path)
             new_entry['snr_db'] = snr_db
 
             manifest_entries.append(new_entry)

@@ -55,6 +55,13 @@ def process_manifest(input_manifest: Path, output_manifest: Path, model_name: st
     """Run inference on all audio files in manifest."""
     print(f"Loading model: {model_name}")
     processor, model, device = load_model(model_name)
+    print(f"Model loaded on device: {device}")
+
+    # Count total entries first
+    with open(input_manifest, 'r', encoding='utf-8') as f:
+        total_entries = sum(1 for _ in f)
+
+    print(f"Total utterances to process: {total_entries}")
 
     manifest_entries = []
 
@@ -76,7 +83,8 @@ def process_manifest(input_manifest: Path, output_manifest: Path, model_name: st
             manifest_entries.append(new_entry)
 
             if (idx + 1) % 10 == 0:
-                print(f"Processed {idx + 1} utterances")
+                progress = (idx + 1) / total_entries * 100
+                print(f"Progress: {idx + 1}/{total_entries} ({progress:.1f}%)")
 
     # Write manifest atomically
     output_manifest.parent.mkdir(parents=True, exist_ok=True)

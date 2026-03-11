@@ -83,17 +83,21 @@ def main():
     parser = argparse.ArgumentParser(description='Plot PER vs SNR curves')
     parser.add_argument('--metrics-dir', type=Path, required=True,
                         help='Directory containing metrics files')
-    parser.add_argument('--languages', nargs='+', required=True,
-                        help='List of language codes')
-    parser.add_argument('--snr-levels', nargs='+', type=float, required=True,
-                        help='List of SNR levels')
     parser.add_argument('--output', type=Path, required=True,
                         help='Output plot path')
 
     args = parser.parse_args()
 
-    data = load_metrics(args.metrics_dir, args.languages, args.snr_levels)
-    plot_per_vs_snr(data, args.snr_levels, args.output)
+    # Load parameters from params.yaml
+    import yaml
+    with open('params.yaml', 'r') as f:
+        params = yaml.safe_load(f)
+
+    languages = params['languages']
+    snr_levels = params['snr_levels']
+
+    data = load_metrics(args.metrics_dir, languages, snr_levels)
+    plot_per_vs_snr(data, snr_levels, args.output)
 
 
 if __name__ == '__main__':

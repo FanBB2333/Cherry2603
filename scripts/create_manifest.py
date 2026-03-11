@@ -91,7 +91,7 @@ def create_manifest(raw_dir: Path, lang: str, output_path: Path):
         audio_md5 = compute_md5(wav_file)
 
         # Create relative path
-        wav_path = str(wav_file.relative_to(Path.cwd()))
+        wav_path = str(wav_file)
 
         entry = {
             "utt_id": utt_id,

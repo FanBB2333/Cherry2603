@@ -1,0 +1,348 @@
+schema: '2.0'
+stages:
+  create_manifest@en:
+    cmd: python scripts/create_manifest.py --raw-dir data/raw --lang en --output
+      data/manifests/en/clean.jsonl
+    deps:
+    - path: data/raw/en/transcripts.txt
+      hash: md5
+      md5: 6c333422f869b6b1e8a4db0ee0223d4b
+      size: 6259
+    - path: data/raw/en/wav
+      hash: md5
+      md5: e5a5eb9a2c46222dbbbca0afa13240cc.dir
+      size: 17929080
+      nfiles: 100
+    - path: scripts/create_manifest.py
+      hash: md5
+      md5: 1a8b0c6724e63acdae952bf3a5455cbe
+      size: 4077
+    outs:
+    - path: data/manifests/en/clean.jsonl
+      hash: md5
+      md5: dd4cc362a35f71e4c93bc81c5375134f
+      size: 34718
+  add_noise_en_20:
+    cmd: python scripts/add_noise.py --input-manifest 
+      data/manifests/en/clean.jsonl --output-manifest 
+      data/manifests/en/snr_20.jsonl --snr-db 20 --noisy-dir data/noisy --seed 
+      42
+    deps:
+    - path: data/manifests/en/clean.jsonl
+      hash: md5
+      md5: dd4cc362a35f71e4c93bc81c5375134f
+      size: 34718
+    - path: scripts/add_noise.py
+      hash: md5
+      md5: 537a9d7d91483bc2f8e39c4f5cf1d5be
+      size: 3804
+    params:
+      params.yaml:
+        seed: 42
+    outs:
+    - path: data/manifests/en/snr_20.jsonl
+      hash: md5
+      md5: 103a95c5553a68cb11b5ba53a1bc4a7f
+      size: 35418
+    - path: data/noisy/en/snr_20.0
+      hash: md5
+      md5: d3927af77917559fe50e458d17685f0a.dir
+      size: 17925680
+      nfiles: 100
+  add_noise_en_10:
+    cmd: python scripts/add_noise.py --input-manifest 
+      data/manifests/en/clean.jsonl --output-manifest 
+      data/manifests/en/snr_10.jsonl --snr-db 10 --noisy-dir data/noisy --seed 
+      42
+    deps:
+    - path: data/manifests/en/clean.jsonl
+      hash: md5
+      md5: dd4cc362a35f71e4c93bc81c5375134f
+      size: 34718
+    - path: scripts/add_noise.py
+      hash: md5
+      md5: 537a9d7d91483bc2f8e39c4f5cf1d5be
+      size: 3804
+    params:
+      params.yaml:
+        seed: 42
+    outs:
+    - path: data/manifests/en/snr_10.jsonl
+      hash: md5
+      md5: d4d1e9229239259886c940149fc3f30e
+      size: 35418
+    - path: data/noisy/en/snr_10.0
+      hash: md5
+      md5: 29118747afc48b6e9fefb90ad3599140.dir
+      size: 17925680
+      nfiles: 100
+  add_noise_en_0:
+    cmd: python scripts/add_noise.py --input-manifest 
+      data/manifests/en/clean.jsonl --output-manifest 
+      data/manifests/en/snr_0.jsonl --snr-db 0 --noisy-dir data/noisy --seed 42
+    deps:
+    - path: data/manifests/en/clean.jsonl
+      hash: md5
+      md5: dd4cc362a35f71e4c93bc81c5375134f
+      size: 34718
+    - path: scripts/add_noise.py
+      hash: md5
+      md5: 537a9d7d91483bc2f8e39c4f5cf1d5be
+      size: 3804
+    params:
+      params.yaml:
+        seed: 42
+    outs:
+    - path: data/manifests/en/snr_0.jsonl
+      hash: md5
+      md5: 23086427df9d268322495c684e361915
+      size: 35218
+    - path: data/noisy/en/snr_0.0
+      hash: md5
+      md5: e5be6a4aaf2dc0784e3d0a7320e14787.dir
+      size: 17925680
+      nfiles: 100
+  add_noise_en_-10:
+    cmd: python scripts/add_noise.py --input-manifest 
+      data/manifests/en/clean.jsonl --output-manifest 
+      data/manifests/en/snr_-10.jsonl --snr-db -10 --noisy-dir data/noisy --seed
+      42
+    deps:
+    - path: data/manifests/en/clean.jsonl
+      hash: md5
+      md5: dd4cc362a35f71e4c93bc81c5375134f
+      size: 34718
+    - path: scripts/add_noise.py
+      hash: md5
+      md5: 537a9d7d91483bc2f8e39c4f5cf1d5be
+      size: 3804
+    params:
+      params.yaml:
+        seed: 42
+    outs:
+    - path: data/manifests/en/snr_-10.jsonl
+      hash: md5
+      md5: ca9d261f337b5d495e7638542f5563b5
+      size: 35618
+    - path: data/noisy/en/snr_-10.0
+      hash: md5
+      md5: bc16621adb08949e9bb4ca0b5967ca70.dir
+      size: 17925680
+      nfiles: 100
+  inference_clean@en:
+    cmd: python scripts/inference.py --input-manifest 
+      data/manifests/en/clean.jsonl --output-manifest 
+      data/predictions/en/clean.jsonl --model-name 
+      models/facebook/wav2vec2-lv-60-espeak-cv-ft
+    deps:
+    - path: data/manifests/en/clean.jsonl
+      hash: md5
+      md5: dd4cc362a35f71e4c93bc81c5375134f
+      size: 34718
+    - path: scripts/inference.py
+      hash: md5
+      md5: 57c17a8c77b7112ab57f14dce52f3fe1
+      size: 3837
+    params:
+      params.yaml:
+        model_name: models/facebook/wav2vec2-lv-60-espeak-cv-ft
+    outs:
+    - path: data/predictions/en/clean.jsonl
+      hash: md5
+      md5: 7acf8e6d1fb0d35bd21b3a0108d955ae
+      size: 45291
+  inference_noisy_en_20:
+    cmd: python scripts/inference.py --input-manifest 
+      data/manifests/en/snr_20.jsonl --output-manifest 
+      data/predictions/en/snr_20.jsonl --model-name 
+      models/facebook/wav2vec2-lv-60-espeak-cv-ft
+    deps:
+    - path: data/manifests/en/snr_20.jsonl
+      hash: md5
+      md5: 103a95c5553a68cb11b5ba53a1bc4a7f
+      size: 35418
+    - path: scripts/inference.py
+      hash: md5
+      md5: 57c17a8c77b7112ab57f14dce52f3fe1
+      size: 3837
+    params:
+      params.yaml:
+        model_name: models/facebook/wav2vec2-lv-60-espeak-cv-ft
+    outs:
+    - path: data/predictions/en/snr_20.jsonl
+      hash: md5
+      md5: 8d98b3386851369acfdf82c86d92c813
+      size: 45741
+  inference_noisy_en_10:
+    cmd: python scripts/inference.py --input-manifest 
+      data/manifests/en/snr_10.jsonl --output-manifest 
+      data/predictions/en/snr_10.jsonl --model-name 
+      models/facebook/wav2vec2-lv-60-espeak-cv-ft
+    deps:
+    - path: data/manifests/en/snr_10.jsonl
+      hash: md5
+      md5: d4d1e9229239259886c940149fc3f30e
+      size: 35418
+    - path: scripts/inference.py
+      hash: md5
+      md5: 57c17a8c77b7112ab57f14dce52f3fe1
+      size: 3837
+    params:
+      params.yaml:
+        model_name: models/facebook/wav2vec2-lv-60-espeak-cv-ft
+    outs:
+    - path: data/predictions/en/snr_10.jsonl
+      hash: md5
+      md5: d7393579c1465ddbbd45ff5bb9533779
+      size: 44756
+  inference_noisy_en_0:
+    cmd: python scripts/inference.py --input-manifest 
+      data/manifests/en/snr_0.jsonl --output-manifest 
+      data/predictions/en/snr_0.jsonl --model-name 
+      models/facebook/wav2vec2-lv-60-espeak-cv-ft
+    deps:
+    - path: data/manifests/en/snr_0.jsonl
+      hash: md5
+      md5: 23086427df9d268322495c684e361915
+      size: 35218
+    - path: scripts/inference.py
+      hash: md5
+      md5: 57c17a8c77b7112ab57f14dce52f3fe1
+      size: 3837
+    params:
+      params.yaml:
+        model_name: models/facebook/wav2vec2-lv-60-espeak-cv-ft
+    outs:
+    - path: data/predictions/en/snr_0.jsonl
+      hash: md5
+      md5: b79a733b5766e0f472d58dd5d953bdbd
+      size: 42059
+  inference_noisy_en_-10:
+    cmd: python scripts/inference.py --input-manifest 
+      data/manifests/en/snr_-10.jsonl --output-manifest 
+      data/predictions/en/snr_-10.jsonl --model-name 
+      models/facebook/wav2vec2-lv-60-espeak-cv-ft
+    deps:
+    - path: data/manifests/en/snr_-10.jsonl
+      hash: md5
+      md5: ca9d261f337b5d495e7638542f5563b5
+      size: 35618
+    - path: scripts/inference.py
+      hash: md5
+      md5: 57c17a8c77b7112ab57f14dce52f3fe1
+      size: 3837
+    params:
+      params.yaml:
+        model_name: models/facebook/wav2vec2-lv-60-espeak-cv-ft
+    outs:
+    - path: data/predictions/en/snr_-10.jsonl
+      hash: md5
+      md5: 2b414e5b082fcd61c2723b8962a7c2d6
+      size: 37558
+  evaluate_clean@en:
+    cmd: python scripts/evaluate.py --input-manifest 
+      data/predictions/en/clean.jsonl --output-metrics metrics/en/clean.json
+    deps:
+    - path: data/predictions/en/clean.jsonl
+      hash: md5
+      md5: 7acf8e6d1fb0d35bd21b3a0108d955ae
+      size: 45291
+    - path: scripts/evaluate.py
+      hash: md5
+      md5: 6fe3a9ecb23460ee58b2d2d93ef56af9
+      size: 3011
+    outs:
+    - path: metrics/en/clean.json
+      hash: md5
+      md5: db7c6b531471f994ff2d29c5431a451d
+      size: 159
+  evaluate_noisy_en_20:
+    cmd: python scripts/evaluate.py --input-manifest 
+      data/predictions/en/snr_20.jsonl --output-metrics metrics/en/snr_20.json
+    deps:
+    - path: data/predictions/en/snr_20.jsonl
+      hash: md5
+      md5: 8d98b3386851369acfdf82c86d92c813
+      size: 45741
+    - path: scripts/evaluate.py
+      hash: md5
+      md5: 6fe3a9ecb23460ee58b2d2d93ef56af9
+      size: 3011
+    outs:
+    - path: metrics/en/snr_20.json
+      hash: md5
+      md5: 888ab9e12ed00acbec0ff23b76d3ac53
+      size: 158
+  evaluate_noisy_en_10:
+    cmd: python scripts/evaluate.py --input-manifest 
+      data/predictions/en/snr_10.jsonl --output-metrics metrics/en/snr_10.json
+    deps:
+    - path: data/predictions/en/snr_10.jsonl
+      hash: md5
+      md5: d7393579c1465ddbbd45ff5bb9533779
+      size: 44756
+    - path: scripts/evaluate.py
+      hash: md5
+      md5: 6fe3a9ecb23460ee58b2d2d93ef56af9
+      size: 3011
+    outs:
+    - path: metrics/en/snr_10.json
+      hash: md5
+      md5: b184ff88560222b7ff19efb4f2b90674
+      size: 158
+  evaluate_noisy_en_0:
+    cmd: python scripts/evaluate.py --input-manifest 
+      data/predictions/en/snr_0.jsonl --output-metrics metrics/en/snr_0.json
+    deps:
+    - path: data/predictions/en/snr_0.jsonl
+      hash: md5
+      md5: b79a733b5766e0f472d58dd5d953bdbd
+      size: 42059
+    - path: scripts/evaluate.py
+      hash: md5
+      md5: 6fe3a9ecb23460ee58b2d2d93ef56af9
+      size: 3011
+    outs:
+    - path: metrics/en/snr_0.json
+      hash: md5
+      md5: af7c07bf8fd3a021b05641fd325cc96a
+      size: 157
+  evaluate_noisy_en_-10:
+    cmd: python scripts/evaluate.py --input-manifest 
+      data/predictions/en/snr_-10.jsonl --output-metrics metrics/en/snr_-10.json
+    deps:
+    - path: data/predictions/en/snr_-10.jsonl
+      hash: md5
+      md5: 2b414e5b082fcd61c2723b8962a7c2d6
+      size: 37558
+    - path: scripts/evaluate.py
+      hash: md5
+      md5: 6fe3a9ecb23460ee58b2d2d93ef56af9
+      size: 3011
+    outs:
+    - path: metrics/en/snr_-10.json
+      hash: md5
+      md5: 9fb986518ab54862f98afb376de05a6f
+      size: 158
+  plot_results:
+    cmd: python scripts/plot_results.py --metrics-dir metrics --output 
+      plots/per_vs_snr.png
+    deps:
+    - path: scripts/plot_results.py
+      hash: md5
+      md5: 0ffd1d9996c04324996d90f3773f9b87
+      size: 3287
+    params:
+      params.yaml:
+        languages:
+        - en
+        snr_levels:
+        - 20
+        - 10
+        - 0
+        - -10
+    outs:
+    - path: plots/per_vs_snr.png
+      hash: md5
+      md5: 27b9588d3c29834a128b02f4023365e2
+      size: 165668
