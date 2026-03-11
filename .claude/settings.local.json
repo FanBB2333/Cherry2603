@@ -13,7 +13,9 @@
       "Bash(nvidia-smi)",
       "Bash(source venv/bin/activate && dvc repro 2>&1 | tee /tmp/dvc_run.log)",
       "Bash(source venv/bin/activate && dvc metrics show)",
-      "Bash(cat metrics/en/*.json)"
+      "Bash(cat metrics/en/*.json)",
+      "Bash(ls -la /home/l1ght/repos/Cherry2603/ | grep -E \"\\\\.md$|docs\")",
+      "Bash(ls -lh /home/l1ght/repos/Cherry2603/*.md /home/l1ght/repos/Cherry2603/docs/*.md 2>/dev/null)"
     ]
   }
 }
