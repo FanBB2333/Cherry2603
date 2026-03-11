@@ -15,7 +15,9 @@
       "Bash(source venv/bin/activate && dvc metrics show)",
       "Bash(cat metrics/en/*.json)",
       "Bash(ls -la /home/l1ght/repos/Cherry2603/ | grep -E \"\\\\.md$|docs\")",
-      "Bash(ls -lh /home/l1ght/repos/Cherry2603/*.md /home/l1ght/repos/Cherry2603/docs/*.md 2>/dev/null)"
+      "Bash(ls -lh /home/l1ght/repos/Cherry2603/*.md /home/l1ght/repos/Cherry2603/docs/*.md 2>/dev/null)",
+      "Bash(source venv/bin/activate && dvc repro -f 2>&1 | head -50)",
+      "Bash(cat /home/l1ght/repos/Cherry2603/metrics/en/*.json | jq -s '.')"
     ]
   }
 }

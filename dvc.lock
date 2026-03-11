@@ -46,7 +46,7 @@ stages:
       size: 35418
     - path: data/noisy/en/snr_20.0
       hash: md5
-      md5: d3927af77917559fe50e458d17685f0a.dir
+      md5: 97a06e001428d84759778536714e6386.dir
       size: 17925680
       nfiles: 100
   add_noise_en_10:
@@ -73,7 +73,7 @@ stages:
       size: 35418
     - path: data/noisy/en/snr_10.0
       hash: md5
-      md5: 29118747afc48b6e9fefb90ad3599140.dir
+      md5: 0c5a73744623595ae57762e95516a8fc.dir
       size: 17925680
       nfiles: 100
   add_noise_en_0:
@@ -99,7 +99,7 @@ stages:
       size: 35218
     - path: data/noisy/en/snr_0.0
       hash: md5
-      md5: e5be6a4aaf2dc0784e3d0a7320e14787.dir
+      md5: 7dcd057daf73a1790f713f9f5e96974e.dir
       size: 17925680
       nfiles: 100
   add_noise_en_-10:
@@ -126,7 +126,7 @@ stages:
       size: 35618
     - path: data/noisy/en/snr_-10.0
       hash: md5
-      md5: bc16621adb08949e9bb4ca0b5967ca70.dir
+      md5: 6b6b46dac33e157a74694eaebb9223f4.dir
       size: 17925680
       nfiles: 100
   inference_clean@en:
