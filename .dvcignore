@@ -1,0 +1,16 @@
+# Add patterns of files dvc should ignore, which could be
+# large files or directories that are not needed for the pipeline
+
+# Python cache
+__pycache__
+*.pyc
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
+
+# Logs
+*.log

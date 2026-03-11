@@ -1,0 +1,6 @@
+numpy
+soundfile
+transformers
+torch
+python-Levenshtein
+matplotlib

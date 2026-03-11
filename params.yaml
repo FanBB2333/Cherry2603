@@ -1,0 +1,34 @@
+# Pipeline parameters
+languages:
+  - en
+  - fr
+
+# SNR levels (in dB) for noise addition
+snr_levels:
+  - 20
+  - 15
+  - 10
+  - 5
+  - 0
+  - -5
+  - -10
+  - -15
+  - -20
+
+# Audio parameters
+sample_rate: 16000
+
+# Model configuration
+model_name: "facebook/wav2vec2-lv-60-espeak-cv-ft"
+
+# Random seed for reproducibility
+seed: 42
+
+# Data paths
+data_dir: "data"
+raw_dir: "data/raw"
+manifest_dir: "data/manifests"
+noisy_dir: "data/noisy"
+predictions_dir: "data/predictions"
+metrics_dir: "metrics"
+plots_dir: "plots"

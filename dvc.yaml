@@ -1,0 +1,116 @@
+stages:
+  # Stage 1: Create clean manifests for each language
+  create_manifest:
+    foreach: ${languages}
+    do:
+      cmd: python scripts/create_manifest.py
+        --raw-dir ${data_dir}/raw
+        --lang ${item}
+        --output ${manifest_dir}/${item}/clean.jsonl
+      deps:
+        - scripts/create_manifest.py
+        - ${data_dir}/raw/${item}/wav
+        - ${data_dir}/raw/${item}/transcripts.txt
+      outs:
+        - ${manifest_dir}/${item}/clean.jsonl
+
+  # Stage 2: Add noise at different SNR levels
+  add_noise:
+    foreach:
+      - lang: ${languages}
+        snr: ${snr_levels}
+    do:
+      cmd: python scripts/add_noise.py
+        --input-manifest ${manifest_dir}/${item.lang}/clean.jsonl
+        --output-manifest ${manifest_dir}/${item.lang}/snr_${item.snr}.jsonl
+        --snr-db ${item.snr}
+        --noisy-dir ${noisy_dir}
+        --seed ${seed}
+      deps:
+        - scripts/add_noise.py
+        - ${manifest_dir}/${item.lang}/clean.jsonl
+      params:
+        - seed
+      outs:
+        - ${manifest_dir}/${item.lang}/snr_${item.snr}.jsonl
+        - ${noisy_dir}/${item.lang}/snr_${item.snr}
+
+  # Stage 3: Run inference on clean audio
+  inference_clean:
+    foreach: ${languages}
+    do:
+      cmd: python scripts/inference.py
+        --input-manifest ${manifest_dir}/${item}/clean.jsonl
+        --output-manifest ${predictions_dir}/${item}/clean.jsonl
+        --model-name ${model_name}
+      deps:
+        - scripts/inference.py
+        - ${manifest_dir}/${item}/clean.jsonl
+      params:
+        - model_name
+      outs:
+        - ${predictions_dir}/${item}/clean.jsonl
+
+  # Stage 4: Run inference on noisy audio
+  inference_noisy:
+    foreach:
+      - lang: ${languages}
+        snr: ${snr_levels}
+    do:
+      cmd: python scripts/inference.py
+        --input-manifest ${manifest_dir}/${item.lang}/snr_${item.snr}.jsonl
+        --output-manifest ${predictions_dir}/${item.lang}/snr_${item.snr}.jsonl
+        --model-name ${model_name}
+      deps:
+        - scripts/inference.py
+        - ${manifest_dir}/${item.lang}/snr_${item.snr}.jsonl
+      params:
+        - model_name
+      outs:
+        - ${predictions_dir}/${item.lang}/snr_${item.snr}.jsonl
+
+  # Stage 5: Evaluate clean audio
+  evaluate_clean:
+    foreach: ${languages}
+    do:
+      cmd: python scripts/evaluate.py
+        --input-manifest ${predictions_dir}/${item}/clean.jsonl
+        --output-metrics ${metrics_dir}/${item}/clean.json
+      deps:
+        - scripts/evaluate.py
+        - ${predictions_dir}/${item}/clean.jsonl
+      metrics:
+        - ${metrics_dir}/${item}/clean.json:
+            cache: false
+
+  # Stage 6: Evaluate noisy audio
+  evaluate_noisy:
+    foreach:
+      - lang: ${languages}
+        snr: ${snr_levels}
+    do:
+      cmd: python scripts/evaluate.py
+        --input-manifest ${predictions_dir}/${item.lang}/snr_${item.snr}.jsonl
+        --output-metrics ${metrics_dir}/${item.lang}/snr_${item.snr}.json
+      deps:
+        - scripts/evaluate.py
+        - ${predictions_dir}/${item.lang}/snr_${item.snr}.jsonl
+      metrics:
+        - ${metrics_dir}/${item.lang}/snr_${item.snr}.json:
+            cache: false
+
+  # Stage 7: Plot results
+  plot_results:
+    cmd: python scripts/plot_results.py
+      --metrics-dir ${metrics_dir}
+      --languages ${languages}
+      --snr-levels ${snr_levels}
+      --output ${plots_dir}/per_vs_snr.png
+    deps:
+      - scripts/plot_results.py
+    params:
+      - languages
+      - snr_levels
+    plots:
+      - ${plots_dir}/per_vs_snr.png:
+          cache: false
