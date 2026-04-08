@@ -23,6 +23,10 @@
     "n_context_sentences": 50,
     "n_successful": 48
   },
+  "297": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "392": {
     "n_context_sentences": 50,
     "n_successful": 49
@@ -71,11 +75,23 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "abnormal": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "above": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "absent": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
   "abundance": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "abundant": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -94,6 +110,26 @@
   "achievable": {
     "n_context_sentences": 38,
     "n_successful": 38
+  },
+  "act": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "acted": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "acting": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "action": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "acts": {
+    "n_context_sentences": 50,
+    "n_successful": 50
   },
   "add": {
     "n_context_sentences": 50,
@@ -171,6 +207,10 @@
     "n_context_sentences": 20,
     "n_successful": 20
   },
+  "ambiguous": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "ambitious": {
     "n_context_sentences": 50,
     "n_successful": 50
@@ -223,6 +263,26 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "appear": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "appearance": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "appeared": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "appearing": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "appears": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "appian": {
     "n_context_sentences": 30,
     "n_successful": 30
@@ -247,6 +307,26 @@
     "n_context_sentences": 10,
     "n_successful": 10
   },
+  "argue": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "argued": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "argues": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "arguing": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "argument": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "arid": {
     "n_context_sentences": 50,
     "n_successful": 50
@@ -256,6 +336,10 @@
     "n_successful": 50
   },
   "arming": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "arrive": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -296,6 +380,10 @@
     "n_successful": 50
   },
   "assent": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "asset": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -383,6 +471,10 @@
     "n_context_sentences": 13,
     "n_successful": 13
   },
+  "barrack": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "bartholomew": {
     "n_context_sentences": 50,
     "n_successful": 50
@@ -412,6 +504,10 @@
     "n_successful": 50
   },
   "bedouin": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "beginning": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -467,6 +563,10 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "bottom": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "bound": {
     "n_context_sentences": 50,
     "n_successful": 50
@@ -476,6 +576,10 @@
     "n_successful": 18
   },
   "bray": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "break": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -503,6 +607,10 @@
     "n_context_sentences": 49,
     "n_successful": 49
   },
+  "busy": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "butai": {
     "n_context_sentences": 27,
     "n_successful": 27
@@ -516,6 +624,22 @@
     "n_successful": 50
   },
   "buttocks": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "call": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "called": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "calling": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "calls": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -550,6 +674,22 @@
   "carolinians": {
     "n_context_sentences": 32,
     "n_successful": 32
+  },
+  "carried": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "carries": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "carry": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "carrying": {
+    "n_context_sentences": 50,
+    "n_successful": 50
   },
   "catabolism": {
     "n_context_sentences": 14,
@@ -627,6 +767,10 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "clear": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "clef": {
     "n_context_sentences": 24,
     "n_successful": 24
@@ -695,7 +839,19 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "concentric": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "conclusion": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "conducting": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "conformity": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -719,6 +875,10 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "consistency": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "constant": {
     "n_context_sentences": 50,
     "n_successful": 50
@@ -735,6 +895,10 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "contracted": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "contraption": {
     "n_context_sentences": 28,
     "n_successful": 28
@@ -748,6 +912,10 @@
     "n_successful": 50
   },
   "controversial": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "conventionally": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -803,6 +971,22 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "create": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "created": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "creates": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "creating": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "cromartie": {
     "n_context_sentences": 10,
     "n_successful": 10
@@ -851,6 +1035,10 @@
     "n_context_sentences": 16,
     "n_successful": 16
   },
+  "dangerous": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "danske": {
     "n_context_sentences": 14,
     "n_successful": 14
@@ -879,6 +1067,10 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "deafening": {
+    "n_context_sentences": 26,
+    "n_successful": 26
+  },
   "debaser": {
     "n_context_sentences": 14,
     "n_successful": 14
@@ -888,6 +1080,26 @@
     "n_successful": 50
   },
   "decentralized": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "decide": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "decided": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "decides": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "deciding": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "decision": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -991,6 +1203,26 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "develop": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "developed": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "developing": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "development": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "develops": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "devilish": {
     "n_context_sentences": 27,
     "n_successful": 27
@@ -1008,6 +1240,26 @@
     "n_successful": 48
   },
   "diemen": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "differ": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "differed": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "difference": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "differing": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "differs": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -1075,6 +1327,10 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "dismissal": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "disobedience": {
     "n_context_sentences": 50,
     "n_successful": 50
@@ -1099,6 +1355,10 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "diversify": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "docherty": {
     "n_context_sentences": 34,
     "n_successful": 34
@@ -1107,7 +1367,15 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "domestic": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "domesticated": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "dominates": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -1179,6 +1447,22 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "eccentric": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "economic": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "economics": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "economy": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "edible": {
     "n_context_sentences": 50,
     "n_successful": 50
@@ -1235,6 +1519,10 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "empty": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "enamored": {
     "n_context_sentences": 50,
     "n_successful": 50
@@ -1244,6 +1532,10 @@
     "n_successful": 50
   },
   "encyclopaedia": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "end": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -1263,11 +1555,39 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "err": {
+    "n_context_sentences": 11,
+    "n_successful": 11
+  },
   "established": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "existent": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "exit": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "expand": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "expanded": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "expanding": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "expands": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "expansion": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -1303,9 +1623,17 @@
     "n_context_sentences": 14,
     "n_successful": 14
   },
+  "fain": {
+    "n_context_sentences": 19,
+    "n_successful": 19
+  },
   "fairly": {
     "n_context_sentences": 50,
     "n_successful": 50
+  },
+  "familiaris": {
+    "n_context_sentences": 11,
+    "n_successful": 11
   },
   "fanny": {
     "n_context_sentences": 50,
@@ -1351,6 +1679,10 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "fill": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "finerman": {
     "n_context_sentences": 12,
     "n_successful": 12
@@ -1358,6 +1690,10 @@
   "firmament": {
     "n_context_sentences": 11,
     "n_successful": 11
+  },
+  "first": {
+    "n_context_sentences": 50,
+    "n_successful": 50
   },
   "fistfight": {
     "n_context_sentences": 33,
@@ -1428,6 +1764,14 @@
     "n_successful": 50
   },
   "forbid": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "foreign": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "form": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -1543,6 +1887,10 @@
     "n_context_sentences": 30,
     "n_successful": 30
   },
+  "gin": {
+    "n_context_sentences": 50,
+    "n_successful": 38
+  },
   "gleaning": {
     "n_context_sentences": 19,
     "n_successful": 19
@@ -1555,6 +1903,18 @@
     "n_context_sentences": 22,
     "n_successful": 22
   },
+  "go": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "goes": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "going": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "golden": {
     "n_context_sentences": 50,
     "n_successful": 50
@@ -1566,6 +1926,14 @@
   "gondii": {
     "n_context_sentences": 11,
     "n_successful": 11
+  },
+  "gone": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "good": {
+    "n_context_sentences": 50,
+    "n_successful": 50
   },
   "gradual": {
     "n_context_sentences": 50,
@@ -1631,6 +1999,22 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "happier": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "happiest": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "happiness": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "happy": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "hardness": {
     "n_context_sentences": 50,
     "n_successful": 50
@@ -1640,6 +2024,10 @@
     "n_successful": 18
   },
   "hastings": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "hateful": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -1666,6 +2054,10 @@
   "heterogeneity": {
     "n_context_sentences": 14,
     "n_successful": 14
+  },
+  "highland": {
+    "n_context_sentences": 50,
+    "n_successful": 50
   },
   "hiiumaa": {
     "n_context_sentences": 12,
@@ -1767,9 +2159,17 @@
     "n_context_sentences": 19,
     "n_successful": 19
   },
+  "idle": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "ieyasu": {
     "n_context_sentences": 44,
     "n_successful": 44
+  },
+  "illegal": {
+    "n_context_sentences": 50,
+    "n_successful": 50
   },
   "illegible": {
     "n_context_sentences": 37,
@@ -1786,6 +2186,10 @@
   "immobility": {
     "n_context_sentences": 21,
     "n_successful": 21
+  },
+  "immoral": {
+    "n_context_sentences": 50,
+    "n_successful": 50
   },
   "immorality": {
     "n_context_sentences": 50,
@@ -1808,6 +2212,14 @@
     "n_successful": 50
   },
   "implicit": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "impossible": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "impure": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -1836,6 +2248,10 @@
     "n_successful": 50
   },
   "incomprehensible": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "inconsistency": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -1915,6 +2331,26 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "inform": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "information": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "informed": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "informing": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "informs": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "ingrained": {
     "n_context_sentences": 40,
     "n_successful": 40
@@ -1983,6 +2419,10 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "international": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "interregional": {
     "n_context_sentences": 10,
     "n_successful": 10
@@ -1992,6 +2432,10 @@
     "n_successful": 46
   },
   "invariant": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "invest": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -2006,6 +2450,10 @@
   "irrecoverable": {
     "n_context_sentences": 15,
     "n_successful": 15
+  },
+  "irregular": {
+    "n_context_sentences": 50,
+    "n_successful": 50
   },
   "irreligious": {
     "n_context_sentences": 23,
@@ -2035,6 +2483,10 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "kadokawa": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "karam": {
     "n_context_sentences": 22,
     "n_successful": 22
@@ -2058,6 +2510,10 @@
   "keychain": {
     "n_context_sentences": 10,
     "n_successful": 10
+  },
+  "king": {
+    "n_context_sentences": 50,
+    "n_successful": 50
   },
   "kirkbride": {
     "n_context_sentences": 11,
@@ -2095,6 +2551,10 @@
     "n_context_sentences": 27,
     "n_successful": 27
   },
+  "kwai": {
+    "n_context_sentences": 48,
+    "n_successful": 48
+  },
   "kwajalein": {
     "n_context_sentences": 50,
     "n_successful": 50
@@ -2115,6 +2575,10 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "late": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "laths": {
     "n_context_sentences": 19,
     "n_successful": 19
@@ -2123,11 +2587,23 @@
     "n_context_sentences": 26,
     "n_successful": 26
   },
+  "lead": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "leaderboards": {
     "n_context_sentences": 31,
     "n_successful": 31
   },
   "leased": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "leave": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "legal": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -2144,6 +2620,10 @@
     "n_successful": 30
   },
   "leipheimer": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "length": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -2219,6 +2699,18 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "long": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "longer": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "longest": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "look": {
     "n_context_sentences": 50,
     "n_successful": 50
@@ -2239,15 +2731,43 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "lovable": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "love": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "loved": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "loves": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "loving": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "lovingly": {
     "n_context_sentences": 39,
     "n_successful": 39
+  },
+  "low": {
+    "n_context_sentences": 50,
+    "n_successful": 49
   },
   "lower": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
   "lowered": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "lowland": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -2286,6 +2806,10 @@
   "manetho": {
     "n_context_sentences": 30,
     "n_successful": 30
+  },
+  "mangan": {
+    "n_context_sentences": 24,
+    "n_successful": 24
   },
   "manjula": {
     "n_context_sentences": 34,
@@ -2463,6 +2987,10 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "moral": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "morality": {
     "n_context_sentences": 50,
     "n_successful": 50
@@ -2479,7 +3007,23 @@
     "n_context_sentences": 19,
     "n_successful": 19
   },
+  "move": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "moveable": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "moved": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "moves": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "moving": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -2488,6 +3032,18 @@
     "n_successful": 47
   },
   "multiply": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "music": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "musical": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "musician": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -2504,6 +3060,22 @@
     "n_successful": 14
   },
   "nataraja": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "nation": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "national": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "nations": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "natural": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -2535,6 +3107,10 @@
     "n_context_sentences": 50,
     "n_successful": 47
   },
+  "no": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "nobles": {
     "n_context_sentences": 50,
     "n_successful": 50
@@ -2543,9 +3119,17 @@
     "n_context_sentences": 14,
     "n_successful": 14
   },
+  "nonconformity": {
+    "n_context_sentences": 16,
+    "n_successful": 16
+  },
   "nonexistence": {
     "n_context_sentences": 12,
     "n_successful": 12
+  },
+  "nonexistent": {
+    "n_context_sentences": 50,
+    "n_successful": 50
   },
   "nonlinear": {
     "n_context_sentences": 50,
@@ -2623,6 +3207,22 @@
     "n_context_sentences": 42,
     "n_successful": 42
   },
+  "occur": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "occurred": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "occurring": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "occurs": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "ocd": {
     "n_context_sentences": 50,
     "n_successful": 50
@@ -2648,6 +3248,22 @@
     "n_successful": 50
   },
   "opaque": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "open": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "opened": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "opening": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "opens": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -2720,6 +3336,14 @@
     "n_successful": 50
   },
   "panelling": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "pantheistic": {
+    "n_context_sentences": 20,
+    "n_successful": 20
+  },
+  "parallel": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -2827,6 +3451,10 @@
     "n_context_sentences": 21,
     "n_successful": 21
   },
+  "pig": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "pioneer": {
     "n_context_sentences": 50,
     "n_successful": 50
@@ -2839,7 +3467,39 @@
     "n_context_sentences": 35,
     "n_successful": 35
   },
+  "plan": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "planned": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "planning": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "plans": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "planted": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "play": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "played": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "playing": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "plays": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -2875,6 +3535,10 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "possible": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "pottstown": {
     "n_context_sentences": 11,
     "n_successful": 11
@@ -2890,6 +3554,30 @@
   "preempt": {
     "n_context_sentences": 28,
     "n_successful": 28
+  },
+  "prefer": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "preference": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "preferred": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "preferring": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "prefers": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "preparation": {
+    "n_context_sentences": 50,
+    "n_successful": 50
   },
   "present": {
     "n_context_sentences": 50,
@@ -2967,11 +3655,19 @@
     "n_context_sentences": 37,
     "n_successful": 37
   },
+  "punitive": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "pure": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
   "purge": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "purity": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -2986,6 +3682,22 @@
   "quandary": {
     "n_context_sentences": 30,
     "n_successful": 30
+  },
+  "quick": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "quicker": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "quickest": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "quickly": {
+    "n_context_sentences": 50,
+    "n_successful": 50
   },
   "quiet": {
     "n_context_sentences": 50,
@@ -3007,6 +3719,10 @@
     "n_context_sentences": 43,
     "n_successful": 43
   },
+  "raise": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "raised": {
     "n_context_sentences": 50,
     "n_successful": 50
@@ -3023,6 +3739,10 @@
     "n_context_sentences": 35,
     "n_successful": 35
   },
+  "raptors": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "rathbone": {
     "n_context_sentences": 34,
     "n_successful": 34
@@ -3034,6 +3754,38 @@
   "rationalise": {
     "n_context_sentences": 13,
     "n_successful": 13
+  },
+  "react": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "reacted": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "reacting": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "reaction": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "reacts": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "read": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "reading": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "reads": {
+    "n_context_sentences": 50,
+    "n_successful": 50
   },
   "real": {
     "n_context_sentences": 50,
@@ -3063,6 +3815,26 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "refer": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "reference": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "referred": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "referring": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "refers": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "reflex": {
     "n_context_sentences": 50,
     "n_successful": 50
@@ -3074,6 +3846,10 @@
   "regress": {
     "n_context_sentences": 21,
     "n_successful": 21
+  },
+  "regular": {
+    "n_context_sentences": 50,
+    "n_successful": 50
   },
   "rehabilitate": {
     "n_context_sentences": 50,
@@ -3092,6 +3868,10 @@
     "n_successful": 28
   },
   "related": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "release": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -3122,6 +3902,10 @@
   "renumbering": {
     "n_context_sentences": 50,
     "n_successful": 50
+  },
+  "repugnance": {
+    "n_context_sentences": 14,
+    "n_successful": 14
   },
   "repulsive": {
     "n_context_sentences": 50,
@@ -3215,6 +3999,10 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "roll": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "roma": {
     "n_context_sentences": 50,
     "n_successful": 50
@@ -3226,6 +4014,10 @@
   "rooting": {
     "n_context_sentences": 50,
     "n_successful": 50
+  },
+  "roughness": {
+    "n_context_sentences": 43,
+    "n_successful": 43
   },
   "rounded": {
     "n_context_sentences": 50,
@@ -3319,6 +4111,14 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "saw": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "scarce": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "scarcity": {
     "n_context_sentences": 50,
     "n_successful": 50
@@ -3327,7 +4127,23 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "science": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "scientific": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "scientist": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "scientists": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "scratch": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -3355,11 +4171,27 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "see": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "seedless": {
     "n_context_sentences": 24,
     "n_successful": 24
   },
   "seedy": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "seeing": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "seen": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "sees": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -3507,9 +4339,21 @@
     "n_context_sentences": 23,
     "n_successful": 23
   },
+  "smoothness": {
+    "n_context_sentences": 34,
+    "n_successful": 34
+  },
   "snagged": {
     "n_context_sentences": 15,
     "n_successful": 15
+  },
+  "snare": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "snooping": {
+    "n_context_sentences": 10,
+    "n_successful": 10
   },
   "so": {
     "n_context_sentences": 50,
@@ -3555,6 +4399,10 @@
     "n_context_sentences": 36,
     "n_successful": 36
   },
+  "specialize": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "speck": {
     "n_context_sentences": 19,
     "n_successful": 19
@@ -3572,6 +4420,10 @@
     "n_successful": 10
   },
   "speculation": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "speed": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -3615,6 +4467,10 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "start": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "stay": {
     "n_context_sentences": 50,
     "n_successful": 50
@@ -3635,6 +4491,22 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "stop": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "stopped": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "stopping": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "stops": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "storytellers": {
     "n_context_sentences": 40,
     "n_successful": 40
@@ -3647,11 +4519,43 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "strength": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "strive": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "strong": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "stronger": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "strongest": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "structured": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "studied": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "studies": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "study": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "studying": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -3691,6 +4595,10 @@
     "n_context_sentences": 42,
     "n_successful": 42
   },
+  "superficial": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "supervised": {
     "n_context_sentences": 50,
     "n_successful": 50
@@ -3707,6 +4615,10 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "swamp": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "switch": {
     "n_context_sentences": 50,
     "n_successful": 50
@@ -3714,6 +4626,42 @@
   "tailfins": {
     "n_context_sentences": 10,
     "n_successful": 10
+  },
+  "take": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "takeaway": {
+    "n_context_sentences": 20,
+    "n_successful": 20
+  },
+  "taken": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "takes": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "taking": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "talk": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "talked": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "talking": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "talks": {
+    "n_context_sentences": 50,
+    "n_successful": 50
   },
   "tamimi": {
     "n_context_sentences": 34,
@@ -3734,6 +4682,14 @@
   "tarry": {
     "n_context_sentences": 10,
     "n_successful": 10
+  },
+  "tasteful": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "tasteless": {
+    "n_context_sentences": 50,
+    "n_successful": 50
   },
   "tegucigalpa": {
     "n_context_sentences": 23,
@@ -3803,6 +4759,10 @@
     "n_context_sentences": 21,
     "n_successful": 21
   },
+  "thunderous": {
+    "n_context_sentences": 45,
+    "n_successful": 45
+  },
   "tillage": {
     "n_context_sentences": 13,
     "n_successful": 13
@@ -3834,6 +4794,10 @@
   "tomari": {
     "n_context_sentences": 11,
     "n_successful": 11
+  },
+  "took": {
+    "n_context_sentences": 50,
+    "n_successful": 50
   },
   "top": {
     "n_context_sentences": 50,
@@ -3867,6 +4831,14 @@
     "n_context_sentences": 24,
     "n_successful": 24
   },
+  "tried": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "tries": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "trimix": {
     "n_context_sentences": 13,
     "n_successful": 13
@@ -3883,6 +4855,10 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "trivial": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "trooping": {
     "n_context_sentences": 29,
     "n_successful": 29
@@ -3892,6 +4868,14 @@
     "n_successful": 50
   },
   "trust": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "try": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "trying": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -3920,6 +4904,10 @@
     "n_successful": 50
   },
   "unaffected": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "unambiguous": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -3962,6 +4950,10 @@
   "uncontroversial": {
     "n_context_sentences": 36,
     "n_successful": 36
+  },
+  "unconventionally": {
+    "n_context_sentences": 13,
+    "n_successful": 13
   },
   "uncover": {
     "n_context_sentences": 50,
@@ -4015,6 +5007,14 @@
     "n_context_sentences": 14,
     "n_successful": 14
   },
+  "unhappiness": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "unhappy": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "uninhabited": {
     "n_context_sentences": 50,
     "n_successful": 50
@@ -4038,6 +5038,10 @@
   "unmanageable": {
     "n_context_sentences": 40,
     "n_successful": 40
+  },
+  "unmoved": {
+    "n_context_sentences": 50,
+    "n_successful": 50
   },
   "unpopular": {
     "n_context_sentences": 50,
@@ -4127,6 +5131,10 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "vagabond": {
+    "n_context_sentences": 33,
+    "n_successful": 33
+  },
   "vaillant": {
     "n_context_sentences": 12,
     "n_successful": 12
@@ -4187,6 +5195,22 @@
     "n_context_sentences": 50,
     "n_successful": 41
   },
+  "walk": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "walked": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "walking": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "walks": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "wallops": {
     "n_context_sentences": 12,
     "n_successful": 12
@@ -4203,6 +5227,10 @@
     "n_context_sentences": 50,
     "n_successful": 50
   },
+  "waste": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
   "watchung": {
     "n_context_sentences": 13,
     "n_successful": 13
@@ -4216,6 +5244,10 @@
     "n_successful": 50
   },
   "weeping": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "went": {
     "n_context_sentences": 50,
     "n_successful": 50
   },
@@ -4242,6 +5274,10 @@
   "whiskered": {
     "n_context_sentences": 21,
     "n_successful": 21
+  },
+  "whiskery": {
+    "n_context_sentences": 14,
+    "n_successful": 14
   },
   "wife": {
     "n_context_sentences": 50,
@@ -4304,6 +5340,22 @@
     "n_successful": 50
   },
   "wrights": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "write": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "writes": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "writing": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "written": {
     "n_context_sentences": 50,
     "n_successful": 50
   },

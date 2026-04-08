@@ -5,11 +5,14 @@ This report summarizes the results obtained from the pipeline in this repository
 
 Experimental setup:
 - Static baseline: `GloVe 6B 100d`
-- Contextual model: local `bert-base-uncased`
+- Contextual model actually used for this run: verified local `models/bert-large-uncased`
+- BERT checkpoint validation: `24` layers, hidden size `1024`, `16` attention heads,
+  `335,141,888` parameters
 - BERT layers analysed: 1, 6, 12
 - Corpus: local `WikiText-103 train`
 - Frequency threshold for WordNet filtering: `N = 10`
-- De-anisotropisation method used in sections 3 and 4: removal of the top 2 principal components
+- De-anisotropisation method used in sections 3 and 4: removal of the top 2 principal
+  components
 
 Generated artifacts:
 - Results: `artifacts/results/`
@@ -44,39 +47,40 @@ Raw results:
 | Model | A1 | mean cos(v, μ) | PC1 EVR |
 |---|---:|---:|---:|
 | GloVe | 0.0237 | 0.1576 | 0.0679 |
-| BERT layer 1 | 0.1256 | 0.3565 | 0.0253 |
-| BERT layer 6 | 0.3338 | 0.5789 | 0.0494 |
-| BERT layer 12 | 0.4067 | 0.6386 | 0.0500 |
+| BERT layer 1 | 0.2263 | 0.4772 | 0.0243 |
+| BERT layer 6 | 0.1571 | 0.3985 | 0.0221 |
+| BERT layer 12 | 0.5301 | 0.7287 | 0.0382 |
 
-The trend is clear: BERT is much more anisotropic than GloVe, and anisotropy increases with
-depth. Layer 12 is the most anisotropic under all three criteria used here.
+The main pattern is that BERT is much more anisotropic than GloVe, especially in the deepest
+layer. The lower-layer trend is not perfectly monotonic in this run: layer 1 is more anisotropic
+than layer 6 under all three raw metrics, while layer 12 is by far the most anisotropic.
 
 ### 3) Metrics after de-anisotropisation
 
-All methods reduce anisotropy strongly, but mean centering already removes most of it.
+All methods reduce anisotropy strongly, and mean centering already removes most of it.
 
 Selected comparisons:
 
 | Model | Raw A1 | Centered A1 | Remove PC2 A1 |
 |---|---:|---:|---:|
 | GloVe | 0.0237 | -0.0009 | -0.0019 |
-| BERT layer 1 | 0.1256 | -0.0015 | -0.0021 |
-| BERT layer 6 | 0.3338 | -0.0018 | -0.0021 |
-| BERT layer 12 | 0.4067 | -0.0017 | -0.0019 |
+| BERT layer 1 | 0.2263 | -0.0015 | -0.0021 |
+| BERT layer 6 | 0.1571 | -0.0019 | -0.0021 |
+| BERT layer 12 | 0.5301 | -0.0017 | -0.0021 |
 
-For `cos(v, μ)`, the same pattern appears: for example, BERT layer 12 drops from `0.6386` in the
-raw space to `0.0001` after removing the top 2 PCs. The first PCA component also becomes much less
-dominant after PC removal; for BERT layer 12 it falls from `0.0500` to `0.0290`.
+For `cos(v, μ)`, the same pattern appears: BERT layer 12 drops from `0.7287` in the raw space to
+`-0.0013` after removing the top 2 PCs. The first PCA component also becomes much less dominant
+after PC removal; for BERT layer 12 it falls from `0.0382` to `0.0226`.
 
 ### 4) Interpretation
 
 Three conclusions emerge.
 
-First, the raw BERT space is strongly anisotropic, much more than GloVe, and this effect becomes
-stronger in higher layers. Second, simple centering is already enough to push pairwise cosine and
-mean-direction cosine close to zero. Third, PC removal flattens the leading variance directions
-more aggressively than centering alone, which makes it a reasonable choice for the later
-experiments.
+First, the raw BERT space is strongly anisotropic, much more than GloVe, and the deepest layer is
+the most anisotropic by a large margin. Second, simple centering is already enough to push
+pairwise cosine and mean-direction cosine close to zero. Third, PC removal flattens the leading
+variance directions more aggressively than centering alone, which makes it a reasonable choice for
+the later experiments.
 
 ## 3 — Morphological encoding
 
@@ -90,9 +94,9 @@ Raw intra-vs-inter effect sizes:
 | Model | Cliff's δ | Cohen's d | Mann–Whitney p |
 |---|---:|---:|---:|
 | GloVe | 0.8976 | 2.3662 | 1.96e-75 |
-| BERT layer 1 | 0.9931 | 4.4731 | 6.46e-92 |
-| BERT layer 6 | 0.9784 | 3.5912 | 2.78e-89 |
-| BERT layer 12 | 0.9600 | 3.2079 | 5.15e-86 |
+| BERT layer 1 | 0.9890 | 4.5373 | 3.57e-91 |
+| BERT layer 6 | 0.9966 | 4.8427 | 1.48e-92 |
+| BERT layer 12 | 0.9824 | 3.7409 | 5.40e-90 |
 
 The difference between intra-family and inter-family similarities is therefore extremely strong and
 highly significant for all models. Morphologically related forms are consistently closer to each
@@ -103,9 +107,9 @@ After removing the top 2 PCs, separation becomes even stronger:
 | Model | Raw Cliff's δ | De-anisotropised Cliff's δ |
 |---|---:|---:|
 | GloVe | 0.8976 | 0.9622 |
-| BERT layer 1 | 0.9931 | 0.9944 |
-| BERT layer 6 | 0.9784 | 0.9976 |
-| BERT layer 12 | 0.9600 | 0.9855 |
+| BERT layer 1 | 0.9890 | 0.9913 |
+| BERT layer 6 | 0.9966 | 0.9984 |
+| BERT layer 12 | 0.9824 | 0.9967 |
 
 This suggests that anisotropy partly hides morphological structure rather than creating it.
 
@@ -116,13 +120,14 @@ Mean cosine between offset vectors:
 | Model | +ed raw / deaniso | +ing raw / deaniso | +s raw / deaniso |
 |---|---:|---:|---:|
 | GloVe | 0.3345 / 0.2899 | 0.3440 / 0.3430 | 0.3172 / 0.2765 |
-| BERT layer 1 | 0.2239 / 0.2248 | 0.2195 / 0.2170 | 0.2543 / 0.2522 |
-| BERT layer 6 | 0.3020 / 0.3009 | 0.3604 / 0.3628 | 0.2981 / 0.2957 |
-| BERT layer 12 | 0.4433 / 0.4472 | 0.4362 / 0.4424 | 0.4588 / 0.4619 |
+| BERT layer 1 | 0.2108 / 0.2126 | 0.1985 / 0.1939 | 0.1877 / 0.1766 |
+| BERT layer 6 | 0.1921 / 0.1925 | 0.2039 / 0.2032 | 0.2491 / 0.2473 |
+| BERT layer 12 | 0.3140 / 0.3153 | 0.4326 / 0.4322 | 0.3416 / 0.3389 |
 
-Offset consistency is weakest in BERT layer 1, stronger in layer 6, and strongest in layer 12.
-For BERT, deeper layers therefore appear to encode more stable morphological transformations.
-De-anisotropisation changes these offset statistics only slightly.
+The clearest result is that BERT layer 12 has the most consistent offsets across all three suffix
+types. Layers 1 and 6 are less stable and trade places depending on the suffix, so the depth trend
+is not monotonic below the top layer. De-anisotropisation changes these offset statistics only
+slightly.
 
 ### 5) (iii) Probing
 
@@ -167,22 +172,22 @@ Raw cosine means:
 | Model | Synonyms | Antonyms | Random |
 |---|---:|---:|---:|
 | GloVe | 0.3544 | 0.4936 | 0.0538 |
-| BERT layer 1 | 0.2341 | 0.3225 | 0.1053 |
-| BERT layer 6 | 0.4953 | 0.5553 | 0.3286 |
-| BERT layer 12 | 0.6203 | 0.6705 | 0.4416 |
+| BERT layer 1 | 0.2934 | 0.3618 | 0.1927 |
+| BERT layer 6 | 0.3017 | 0.3775 | 0.1414 |
+| BERT layer 12 | 0.6350 | 0.6768 | 0.5142 |
 
-The central result is that antonyms are not only close to synonyms; in this experiment they are
-often even closer than synonyms. This is especially strong in deeper BERT layers, where even
-random pairs are already fairly close because of anisotropy.
+The central result is unchanged: antonyms are not only close to synonyms; in this experiment they
+are often even closer than synonyms. This is strongest in BERT layer 12, where even random pairs
+are already very close because of anisotropy.
 
 After de-anisotropisation, the random baseline collapses toward zero:
 
 | Model | Synonyms | Antonyms | Random |
 |---|---:|---:|---:|
 | GloVe | 0.2763 | 0.4047 | -0.0047 |
-| BERT layer 1 | 0.1395 | 0.2389 | 0.0023 |
-| BERT layer 6 | 0.2380 | 0.3191 | -0.0052 |
-| BERT layer 12 | 0.2760 | 0.3567 | -0.0013 |
+| BERT layer 1 | 0.1328 | 0.2187 | 0.0079 |
+| BERT layer 6 | 0.1789 | 0.2650 | 0.0002 |
+| BERT layer 12 | 0.2512 | 0.3257 | 0.0011 |
 
 This makes the interpretation cleaner: de-anisotropisation removes the global similarity bias, but
 the antonym-vs-synonym ordering remains. The closeness of antonyms is therefore not only an
@@ -195,26 +200,22 @@ Antonym-in-top10 rate on 50 targets:
 | Model | Raw | De-anisotropised |
 |---|---:|---:|
 | GloVe | 0.48 | 0.54 |
-| BERT layer 1 | 0.50 | 0.48 |
-| BERT layer 6 | 0.38 | 0.48 |
-| BERT layer 12 | 0.38 | 0.48 |
+| BERT layer 1 | 0.46 | 0.58 |
+| BERT layer 6 | 0.54 | 0.60 |
+| BERT layer 12 | 0.52 | 0.58 |
 
 Antonyms therefore appear very frequently in the local neighbourhood of a word, even when the
-space is de-anisotropised. The strongest change is in deeper BERT layers, where neighbourhood
-antonym rates increase from `0.38` to `0.48` after PC removal.
+space is de-anisotropised. The largest shift happens for BERT layer 1, where the antonym-in-top10
+rate rises from `0.46` to `0.58`; the other models also remain high after PC removal.
 
 ## Overall conclusion
 
 The experiment supports four main conclusions.
 
-1. BERT representations are much more anisotropic than GloVe, and anisotropy increases with
-depth.
+1. BERT representations are much more anisotropic than GloVe, and the deepest analysed layer is
+   the most anisotropic, although the lower-layer pattern is not strictly monotonic in this run.
 2. Morphological information is very clearly encoded in both static and contextual embeddings.
 3. De-anisotropisation generally helps reveal structure rather than destroy it, especially for
-intra-vs-inter family comparisons.
+   intra-vs-inter family comparisons.
 4. Synonyms and antonyms remain close in embedding space, which is entirely compatible with
-distributional semantics but remains semantically counter-intuitive.
-
-One practical caveat is that this run used the locally available `bert-base-uncased` model rather
-than a 1024-dimensional BERT variant. The qualitative trends are nevertheless strong and coherent
-across all three parts of the lab.
+   distributional semantics but remains semantically counter-intuitive.
