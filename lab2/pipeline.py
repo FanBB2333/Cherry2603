@@ -6,7 +6,7 @@ from pathlib import Path
 from lab2.config import LabConfig
 from lab2.hf import load_wikitext103_train
 from lab2.paths import ProjectPaths
-from lab2.utils import ensure_dir, write_json, write_jsonl, write_pickle
+from lab2.utils import ensure_dir, read_json, write_json, write_jsonl, write_pickle
 
 
 def prepare_corpus(*, config: LabConfig, paths: ProjectPaths) -> None:
@@ -49,6 +49,7 @@ def prepare_corpus(*, config: LabConfig, paths: ProjectPaths) -> None:
         iter_preprocessed_sentences((row["text"] for row in dataset), config=config),
         target_words=all_forms,
         config=config,
+        include_excluded=False,
     )
 
     out_path = paths.contexts_dir / "morph_contexts.jsonl"
@@ -99,9 +100,9 @@ def build_synant(*, config: LabConfig, paths: ProjectPaths) -> None:
 
     from lab2.data.wordnet_pairs import (
         PairSamplingConfig,
+        filter_pairs,
         iter_antonym_pairs,
         iter_synonym_pairs,
-        sample_pairs,
         write_pairs_tsv,
     )
 
@@ -112,28 +113,96 @@ def build_synant(*, config: LabConfig, paths: ProjectPaths) -> None:
     )
 
     print("Sampling synonym pairs from WordNet…")
-    syn_pairs = sample_pairs(
+    syn_candidates = filter_pairs(
         iter_synonym_pairs(paths),
         freqs=freqs,
         glove_vocab=glove_vocab,
-        cfg=pair_cfg,
+        min_wikitext_count=pair_cfg.min_wikitext_count,
     )
     print("Sampling antonym pairs from WordNet…")
-    ant_pairs = sample_pairs(
+    ant_candidates = filter_pairs(
         iter_antonym_pairs(paths),
         freqs=freqs,
         glove_vocab=glove_vocab,
-        cfg=PairSamplingConfig(
-            n_pairs=200,
-            min_wikitext_count=config.min_word_occurrences,
-            seed=config.random_seed + 1,
-        ),
+        min_wikitext_count=config.min_word_occurrences,
+    )
+
+    import random
+
+    def build_pair_index(pairs: list[tuple[str, str]]) -> dict[str, list[tuple[str, str]]]:
+        out: dict[str, list[tuple[str, str]]] = {}
+        for a, b in pairs:
+            out.setdefault(a, []).append((a, b))
+            out.setdefault(b, []).append((a, b))
+        return out
+
+    def select_pairs_with_overlap(
+        *,
+        syn_pool: list[tuple[str, str]],
+        ant_pool: list[tuple[str, str]],
+        n_pairs: int,
+        min_overlap_targets: int,
+        seed: int,
+    ) -> tuple[list[tuple[str, str]], list[tuple[str, str]]]:
+        syn_index = build_pair_index(syn_pool)
+        ant_index = build_pair_index(ant_pool)
+        common_targets = sorted(set(syn_index).intersection(ant_index))
+
+        rng = random.Random(seed)
+        rng.shuffle(common_targets)
+        targets = common_targets[: min(min_overlap_targets, len(common_targets))]
+
+        selected_syn: set[tuple[str, str]] = set()
+        selected_ant: set[tuple[str, str]] = set()
+
+        for target in targets:
+            syn_options = list(syn_index[target])
+            ant_options = list(ant_index[target])
+            rng.shuffle(syn_options)
+            rng.shuffle(ant_options)
+            selected_syn.add(syn_options[0])
+            selected_ant.add(ant_options[0])
+
+        def top_up(
+            pool: list[tuple[str, str]],
+            selected: set[tuple[str, str]],
+            *,
+            seed_value: int,
+        ) -> list[tuple[str, str]]:
+            remaining = [pair for pair in pool if pair not in selected]
+            rng_local = random.Random(seed_value)
+            rng_local.shuffle(remaining)
+            out = list(selected)
+            out.extend(remaining[: max(0, n_pairs - len(out))])
+            return sorted(out[:n_pairs])
+
+        syn_pairs_local = top_up(syn_pool, selected_syn, seed_value=seed)
+        ant_pairs_local = top_up(ant_pool, selected_ant, seed_value=seed + 1)
+        return syn_pairs_local, ant_pairs_local
+
+    syn_pairs, ant_pairs = select_pairs_with_overlap(
+        syn_pool=syn_candidates,
+        ant_pool=ant_candidates,
+        n_pairs=pair_cfg.n_pairs,
+        min_overlap_targets=50,
+        seed=config.random_seed,
     )
 
     syn_out = paths.results_dir / "synonym_pairs.tsv"
     ant_out = paths.results_dir / "antonym_pairs.tsv"
     write_pairs_tsv(syn_out, syn_pairs)
     write_pairs_tsv(ant_out, ant_pairs)
+    overlap_targets = sorted({w for pair in syn_pairs for w in pair}.intersection({w for pair in ant_pairs for w in pair}))
+    write_json(
+        paths.results_dir / "synant_sampling_meta.json",
+        {
+            "n_syn_candidates": len(syn_candidates),
+            "n_ant_candidates": len(ant_candidates),
+            "n_syn_pairs": len(syn_pairs),
+            "n_ant_pairs": len(ant_pairs),
+            "n_overlap_targets": len(overlap_targets),
+        },
+    )
     print(f"Wrote: {syn_out}")
     print(f"Wrote: {ant_out}")
 
@@ -178,29 +247,37 @@ def compute_embeddings(*, config: LabConfig, paths: ProjectPaths) -> None:  # pr
     synant_ctx_path = paths.contexts_dir / "synant_contexts.jsonl"
     if synant_words:
         if synant_ctx_path.exists():
-            synant_ctx = read_contexts_jsonl(synant_ctx_path)
-        else:
-            print(f"Sampling contexts for {len(synant_words)} synonym/antonym words…")
+            synant_ctx = {
+                w: wc for w, wc in read_contexts_jsonl(synant_ctx_path).items() if w in synant_words
+            }
+        missing_synant_words = sorted(synant_words - set(synant_ctx))
+        if missing_synant_words:
+            print(f"Sampling contexts for {len(missing_synant_words)} synonym/antonym words…")
             dataset = load_wikitext103_train(paths)
             from lab2.data.wikitext import iter_preprocessed_sentences, sample_contexts_for_words
 
             contexts, excluded = sample_contexts_for_words(
                 iter_preprocessed_sentences((row["text"] for row in dataset), config=config),
-                target_words=synant_words,
+                target_words=set(missing_synant_words),
                 config=config,
+                include_excluded=False,
             )
-            synant_ctx = {
-                w: WordContexts(
-                    word=cs.word,
-                    sentences=cs.sentences,
-                    low_frequency=cs.low_frequency,
-                    n_unique_sentences=cs.n_unique_sentences,
-                    n_total_matches=cs.n_total_matches,
-                )
-                for w, cs in contexts.items()
-            }
+            synant_ctx.update(
+                {
+                    w: WordContexts(
+                        word=cs.word,
+                        sentences=cs.sentences,
+                        low_frequency=cs.low_frequency,
+                        n_unique_sentences=cs.n_unique_sentences,
+                        n_total_matches=cs.n_total_matches,
+                    )
+                    for w, cs in contexts.items()
+                }
+            )
             write_contexts_jsonl(synant_ctx_path, synant_ctx)
-            write_json(paths.results_dir / "synant_contexts_excluded.json", {"excluded_words": excluded})
+            excluded_path = paths.results_dir / "synant_contexts_excluded.json"
+            prev_excluded = set(read_json(excluded_path).get("excluded_words", [])) if excluded_path.exists() else set()
+            write_json(excluded_path, {"excluded_words": sorted(prev_excluded.union(excluded))})
 
     # Merge contexts; if a word appears in both, keep the one with more sentences.
     merged_ctx: dict[str, WordContexts] = dict(morph_ctx)
@@ -232,29 +309,37 @@ def compute_embeddings(*, config: LabConfig, paths: ProjectPaths) -> None:  # pr
         random_ctx_path = paths.contexts_dir / "random_contexts.jsonl"
         random_ctx: dict[str, WordContexts] = {}
         if random_ctx_path.exists():
-            random_ctx = read_contexts_jsonl(random_ctx_path)
-        else:
-            print(f"Sampling contexts for {len(random_words)} random words (anisotropy)…")
+            random_ctx = {
+                w: wc for w, wc in read_contexts_jsonl(random_ctx_path).items() if w in random_words
+            }
+        missing_random_words = sorted(random_words - set(random_ctx))
+        if missing_random_words:
+            print(f"Sampling contexts for {len(missing_random_words)} random words (anisotropy)…")
             dataset = load_wikitext103_train(paths)
             from lab2.data.wikitext import iter_preprocessed_sentences, sample_contexts_for_words
 
             contexts, excluded = sample_contexts_for_words(
                 iter_preprocessed_sentences((row["text"] for row in dataset), config=config),
-                target_words=random_words,
+                target_words=set(missing_random_words),
                 config=config,
+                include_excluded=False,
             )
-            random_ctx = {
-                w: WordContexts(
-                    word=cs.word,
-                    sentences=cs.sentences,
-                    low_frequency=cs.low_frequency,
-                    n_unique_sentences=cs.n_unique_sentences,
-                    n_total_matches=cs.n_total_matches,
-                )
-                for w, cs in contexts.items()
-            }
+            random_ctx.update(
+                {
+                    w: WordContexts(
+                        word=cs.word,
+                        sentences=cs.sentences,
+                        low_frequency=cs.low_frequency,
+                        n_unique_sentences=cs.n_unique_sentences,
+                        n_total_matches=cs.n_total_matches,
+                    )
+                    for w, cs in contexts.items()
+                }
+            )
             write_contexts_jsonl(random_ctx_path, random_ctx)
-            write_json(paths.results_dir / "random_contexts_excluded.json", {"excluded_words": excluded})
+            excluded_path = paths.results_dir / "random_contexts_excluded.json"
+            prev_excluded = set(read_json(excluded_path).get("excluded_words", [])) if excluded_path.exists() else set()
+            write_json(excluded_path, {"excluded_words": sorted(prev_excluded.union(excluded))})
 
         for w, wc in random_ctx.items():
             merged_ctx.setdefault(w, wc)

@@ -1,0 +1,4338 @@
+{
+  "1136": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "1520": {
+    "n_context_sentences": 50,
+    "n_successful": 42
+  },
+  "1558": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "1699": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "1896": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "267": {
+    "n_context_sentences": 50,
+    "n_successful": 48
+  },
+  "392": {
+    "n_context_sentences": 50,
+    "n_successful": 49
+  },
+  "471": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "625": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "769": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "804": {
+    "n_context_sentences": 50,
+    "n_successful": 43
+  },
+  "90210": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "991": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "aaa": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "abbot": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "abbotsbury": {
+    "n_context_sentences": 13,
+    "n_successful": 13
+  },
+  "abelson": {
+    "n_context_sentences": 14,
+    "n_successful": 14
+  },
+  "able": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "absent": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "abundance": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "abyssinia": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "accelerate": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "accuracy": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "achievable": {
+    "n_context_sentences": 38,
+    "n_successful": 38
+  },
+  "add": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "adhd": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "adjective": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "adolph": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "adventurers": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "affiliating": {
+    "n_context_sentences": 14,
+    "n_successful": 14
+  },
+  "affirmation": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "age": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "agonist": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "agony": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "agreeing": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "agreement": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "airship": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "akeelah": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "alcove": {
+    "n_context_sentences": 36,
+    "n_successful": 36
+  },
+  "alecto": {
+    "n_context_sentences": 10,
+    "n_successful": 10
+  },
+  "align": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "alternate": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "alumina": {
+    "n_context_sentences": 20,
+    "n_successful": 20
+  },
+  "ambitious": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "ammonia": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "amn": {
+    "n_context_sentences": 25,
+    "n_successful": 25
+  },
+  "anabolism": {
+    "n_context_sentences": 11,
+    "n_successful": 11
+  },
+  "angiosperms": {
+    "n_context_sentences": 44,
+    "n_successful": 44
+  },
+  "angola": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "angular": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "animus": {
+    "n_context_sentences": 16,
+    "n_successful": 16
+  },
+  "antagonist": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "anterograde": {
+    "n_context_sentences": 18,
+    "n_successful": 18
+  },
+  "anupama": {
+    "n_context_sentences": 41,
+    "n_successful": 41
+  },
+  "aperiodic": {
+    "n_context_sentences": 18,
+    "n_successful": 18
+  },
+  "apologize": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "appian": {
+    "n_context_sentences": 30,
+    "n_successful": 30
+  },
+  "appraise": {
+    "n_context_sentences": 13,
+    "n_successful": 13
+  },
+  "arab": {
+    "n_context_sentences": 50,
+    "n_successful": 48
+  },
+  "arcadium": {
+    "n_context_sentences": 10,
+    "n_successful": 10
+  },
+  "arch": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "archimandrite": {
+    "n_context_sentences": 10,
+    "n_successful": 10
+  },
+  "arid": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "armed": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "arming": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "arron": {
+    "n_context_sentences": 12,
+    "n_successful": 12
+  },
+  "artful": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "articulate": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "artless": {
+    "n_context_sentences": 15,
+    "n_successful": 15
+  },
+  "ascertain": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "ashamed": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "ashish": {
+    "n_context_sentences": 17,
+    "n_successful": 17
+  },
+  "aspirated": {
+    "n_context_sentences": 35,
+    "n_successful": 35
+  },
+  "ass": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "assent": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "associate": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "atonement": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "attack": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "attendants": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "attractive": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "attractiveness": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "augmentation": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "automation": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "averted": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "azkaban": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "backbone": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "backward": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "bad": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "baffling": {
+    "n_context_sentences": 46,
+    "n_successful": 46
+  },
+  "balgo": {
+    "n_context_sentences": 13,
+    "n_successful": 13
+  },
+  "balusters": {
+    "n_context_sentences": 22,
+    "n_successful": 22
+  },
+  "banat": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "bankruptcy": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "baptized": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "bargaining": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "barotrauma": {
+    "n_context_sentences": 13,
+    "n_successful": 13
+  },
+  "bartholomew": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "bastard": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "bastin": {
+    "n_context_sentences": 18,
+    "n_successful": 18
+  },
+  "bastioned": {
+    "n_context_sentences": 19,
+    "n_successful": 19
+  },
+  "battisti": {
+    "n_context_sentences": 10,
+    "n_successful": 10
+  },
+  "bautista": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "beat": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "bedouin": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "beloved": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "besotted": {
+    "n_context_sentences": 14,
+    "n_successful": 14
+  },
+  "best": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "beverage": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "bitumen": {
+    "n_context_sentences": 40,
+    "n_successful": 40
+  },
+  "bleecker": {
+    "n_context_sentences": 37,
+    "n_successful": 37
+  },
+  "blind": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "bloodless": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "bloodlines": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "bloody": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "blossoming": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "bot": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "bother": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "bound": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "brahmacharya": {
+    "n_context_sentences": 18,
+    "n_successful": 18
+  },
+  "bray": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "breaking": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "brenna": {
+    "n_context_sentences": 10,
+    "n_successful": 10
+  },
+  "brick": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "bright": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "browsing": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "bum": {
+    "n_context_sentences": 49,
+    "n_successful": 49
+  },
+  "butai": {
+    "n_context_sentences": 27,
+    "n_successful": 27
+  },
+  "butt": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "butterfly": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "buttocks": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "camper": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "canals": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "candor": {
+    "n_context_sentences": 30,
+    "n_successful": 30
+  },
+  "canoes": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "cantons": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "canute": {
+    "n_context_sentences": 24,
+    "n_successful": 24
+  },
+  "cardinal": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "carolinians": {
+    "n_context_sentences": 32,
+    "n_successful": 32
+  },
+  "catabolism": {
+    "n_context_sentences": 14,
+    "n_successful": 14
+  },
+  "centralized": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "cerebral": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "certainty": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "chafe": {
+    "n_context_sentences": 15,
+    "n_successful": 15
+  },
+  "chahta": {
+    "n_context_sentences": 11,
+    "n_successful": 11
+  },
+  "change": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "chantilly": {
+    "n_context_sentences": 23,
+    "n_successful": 23
+  },
+  "charged": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "cheating": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "child": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "chinna": {
+    "n_context_sentences": 29,
+    "n_successful": 29
+  },
+  "choctaw": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "chrystie": {
+    "n_context_sentences": 13,
+    "n_successful": 13
+  },
+  "cinematically": {
+    "n_context_sentences": 15,
+    "n_successful": 15
+  },
+  "cinquemani": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "clamped": {
+    "n_context_sentences": 43,
+    "n_successful": 43
+  },
+  "clams": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "clarity": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "clef": {
+    "n_context_sentences": 24,
+    "n_successful": 24
+  },
+  "clergyman": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "clockmakers": {
+    "n_context_sentences": 12,
+    "n_successful": 12
+  },
+  "closeup": {
+    "n_context_sentences": 22,
+    "n_successful": 22
+  },
+  "cnc": {
+    "n_context_sentences": 18,
+    "n_successful": 16
+  },
+  "coals": {
+    "n_context_sentences": 39,
+    "n_successful": 39
+  },
+  "coarseness": {
+    "n_context_sentences": 13,
+    "n_successful": 13
+  },
+  "coherence": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "colonels": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "commoner": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "companion": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "comparable": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "competitive": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "complete": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "compliance": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "comprehensible": {
+    "n_context_sentences": 39,
+    "n_successful": 39
+  },
+  "concentrates": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "conducting": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "conforms": {
+    "n_context_sentences": 35,
+    "n_successful": 35
+  },
+  "confusion": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "conserve": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "conserves": {
+    "n_context_sentences": 14,
+    "n_successful": 14
+  },
+  "consider": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "constant": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "contested": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "continuation": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "continuity": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "contraption": {
+    "n_context_sentences": 28,
+    "n_successful": 28
+  },
+  "contrivance": {
+    "n_context_sentences": 17,
+    "n_successful": 17
+  },
+  "controlled": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "controversial": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "convergence": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "convey": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "copernicus": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "corr": {
+    "n_context_sentences": 50,
+    "n_successful": 32
+  },
+  "corrected": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "cortex": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "cosh": {
+    "n_context_sentences": 11,
+    "n_successful": 11
+  },
+  "cosmonaut": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "costanoan": {
+    "n_context_sentences": 28,
+    "n_successful": 28
+  },
+  "coulomb": {
+    "n_context_sentences": 47,
+    "n_successful": 47
+  },
+  "counterfeit": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "courtyard": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "cover": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "cromartie": {
+    "n_context_sentences": 10,
+    "n_successful": 10
+  },
+  "crossbreeding": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "crumpled": {
+    "n_context_sentences": 29,
+    "n_successful": 29
+  },
+  "csepel": {
+    "n_context_sentences": 13,
+    "n_successful": 13
+  },
+  "css": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "cuddle": {
+    "n_context_sentences": 14,
+    "n_successful": 14
+  },
+  "cult": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "cursor": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "customers": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "cyclotrons": {
+    "n_context_sentences": 16,
+    "n_successful": 16
+  },
+  "cypresses": {
+    "n_context_sentences": 24,
+    "n_successful": 24
+  },
+  "daggett": {
+    "n_context_sentences": 16,
+    "n_successful": 16
+  },
+  "danske": {
+    "n_context_sentences": 14,
+    "n_successful": 14
+  },
+  "darned": {
+    "n_context_sentences": 13,
+    "n_successful": 13
+  },
+  "daughter": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "daytime": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "dazed": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "dead": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "deadlocked": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "debaser": {
+    "n_context_sentences": 14,
+    "n_successful": 14
+  },
+  "deceiving": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "decentralized": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "decline": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "decode": {
+    "n_context_sentences": 27,
+    "n_successful": 27
+  },
+  "decrease": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "defend": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "degenerate": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "degenerative": {
+    "n_context_sentences": 49,
+    "n_successful": 49
+  },
+  "dehumanizing": {
+    "n_context_sentences": 11,
+    "n_successful": 11
+  },
+  "delve": {
+    "n_context_sentences": 47,
+    "n_successful": 47
+  },
+  "demolition": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "demote": {
+    "n_context_sentences": 13,
+    "n_successful": 13
+  },
+  "demure": {
+    "n_context_sentences": 30,
+    "n_successful": 30
+  },
+  "denn": {
+    "n_context_sentences": 12,
+    "n_successful": 6
+  },
+  "dependent": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "deplorable": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "depressed": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "descenders": {
+    "n_context_sentences": 12,
+    "n_successful": 12
+  },
+  "desegregate": {
+    "n_context_sentences": 26,
+    "n_successful": 26
+  },
+  "desiccated": {
+    "n_context_sentences": 25,
+    "n_successful": 25
+  },
+  "designates": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "desirable": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "desktop": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "despised": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "destined": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "desu": {
+    "n_context_sentences": 14,
+    "n_successful": 14
+  },
+  "determined": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "devilish": {
+    "n_context_sentences": 27,
+    "n_successful": 27
+  },
+  "devolve": {
+    "n_context_sentences": 23,
+    "n_successful": 23
+  },
+  "dharamsala": {
+    "n_context_sentences": 11,
+    "n_successful": 11
+  },
+  "diabolical": {
+    "n_context_sentences": 48,
+    "n_successful": 48
+  },
+  "diemen": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "dig": {
+    "n_context_sentences": 50,
+    "n_successful": 49
+  },
+  "dignities": {
+    "n_context_sentences": 19,
+    "n_successful": 19
+  },
+  "diluted": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "diminution": {
+    "n_context_sentences": 35,
+    "n_successful": 35
+  },
+  "dinghy": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "diploid": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "directional": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "dirigible": {
+    "n_context_sentences": 11,
+    "n_successful": 11
+  },
+  "disagreement": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "disappear": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "disappearance": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "disarming": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "discontinuation": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "discontinuity": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "dishonesty": {
+    "n_context_sentences": 41,
+    "n_successful": 41
+  },
+  "disliked": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "disobedience": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "dispirited": {
+    "n_context_sentences": 25,
+    "n_successful": 25
+  },
+  "displace": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "dissatisfaction": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "dissent": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "divergence": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "docherty": {
+    "n_context_sentences": 34,
+    "n_successful": 34
+  },
+  "dodd": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "domesticated": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "donnelly": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "doohan": {
+    "n_context_sentences": 32,
+    "n_successful": 32
+  },
+  "dott": {
+    "n_context_sentences": 18,
+    "n_successful": 18
+  },
+  "double": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "downstream": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "draconian": {
+    "n_context_sentences": 39,
+    "n_successful": 39
+  },
+  "draw": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "dressings": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "drift": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "drinkable": {
+    "n_context_sentences": 10,
+    "n_successful": 10
+  },
+  "drooping": {
+    "n_context_sentences": 47,
+    "n_successful": 47
+  },
+  "duet": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "dull": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "early": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "east": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "easter": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "easterly": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "edible": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "effected": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "efficiency": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "efficient": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "eggshell": {
+    "n_context_sentences": 32,
+    "n_successful": 32
+  },
+  "egress": {
+    "n_context_sentences": 14,
+    "n_successful": 14
+  },
+  "elaborate": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "elapse": {
+    "n_context_sentences": 13,
+    "n_successful": 13
+  },
+  "eligible": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "eloquence": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "elusive": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "emergence": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "emily": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "empower": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "enamored": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "encode": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "encyclopaedia": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "ending": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "energia": {
+    "n_context_sentences": 13,
+    "n_successful": 13
+  },
+  "entitlements": {
+    "n_context_sentences": 19,
+    "n_successful": 19
+  },
+  "eroding": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "established": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "exit": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "expected": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "experienced": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "expiration": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "explicit": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "express": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "external": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "extrapolate": {
+    "n_context_sentences": 14,
+    "n_successful": 14
+  },
+  "fafnir": {
+    "n_context_sentences": 14,
+    "n_successful": 14
+  },
+  "fairly": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "fanny": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "farfisa": {
+    "n_context_sentences": 19,
+    "n_successful": 19
+  },
+  "farmland": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "fascia": {
+    "n_context_sentences": 31,
+    "n_successful": 31
+  },
+  "fat": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "featherstone": {
+    "n_context_sentences": 26,
+    "n_successful": 26
+  },
+  "felicity": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "felt": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "fertilize": {
+    "n_context_sentences": 25,
+    "n_successful": 25
+  },
+  "fictional": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "fiery": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "finerman": {
+    "n_context_sentences": 12,
+    "n_successful": 12
+  },
+  "firmament": {
+    "n_context_sentences": 11,
+    "n_successful": 11
+  },
+  "fistfight": {
+    "n_context_sentences": 33,
+    "n_successful": 33
+  },
+  "flak": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "flatten": {
+    "n_context_sentences": 38,
+    "n_successful": 38
+  },
+  "flattering": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "flew": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "flexible": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "flik": {
+    "n_context_sentences": 21,
+    "n_successful": 21
+  },
+  "flip": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "flow": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "flowering": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "flustered": {
+    "n_context_sentences": 14,
+    "n_successful": 14
+  },
+  "flyover": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "focussed": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "foiled": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "folly": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "fomented": {
+    "n_context_sentences": 23,
+    "n_successful": 23
+  },
+  "footwear": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "forbid": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "fortescue": {
+    "n_context_sentences": 22,
+    "n_successful": 22
+  },
+  "forward": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "foundation": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "franchetti": {
+    "n_context_sentences": 10,
+    "n_successful": 10
+  },
+  "frankness": {
+    "n_context_sentences": 24,
+    "n_successful": 24
+  },
+  "fresnel": {
+    "n_context_sentences": 49,
+    "n_successful": 49
+  },
+  "frightful": {
+    "n_context_sentences": 33,
+    "n_successful": 33
+  },
+  "frontally": {
+    "n_context_sentences": 13,
+    "n_successful": 13
+  },
+  "frown": {
+    "n_context_sentences": 19,
+    "n_successful": 19
+  },
+  "ftl": {
+    "n_context_sentences": 15,
+    "n_successful": 15
+  },
+  "fulfil": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "fulfills": {
+    "n_context_sentences": 47,
+    "n_successful": 47
+  },
+  "fullscreen": {
+    "n_context_sentences": 17,
+    "n_successful": 17
+  },
+  "funded": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "fungal": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "furthest": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "fuzhou": {
+    "n_context_sentences": 39,
+    "n_successful": 39
+  },
+  "gainesville": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "gal": {
+    "n_context_sentences": 50,
+    "n_successful": 41
+  },
+  "galloped": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "garibaldi": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "gauzy": {
+    "n_context_sentences": 10,
+    "n_successful": 10
+  },
+  "gazetted": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "generalize": {
+    "n_context_sentences": 23,
+    "n_successful": 23
+  },
+  "generic": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "gens": {
+    "n_context_sentences": 17,
+    "n_successful": 17
+  },
+  "genuine": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "gilled": {
+    "n_context_sentences": 30,
+    "n_successful": 30
+  },
+  "gleaning": {
+    "n_context_sentences": 19,
+    "n_successful": 19
+  },
+  "glick": {
+    "n_context_sentences": 20,
+    "n_successful": 20
+  },
+  "glimcher": {
+    "n_context_sentences": 22,
+    "n_successful": 22
+  },
+  "golden": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "gonadotropin": {
+    "n_context_sentences": 12,
+    "n_successful": 12
+  },
+  "gondii": {
+    "n_context_sentences": 11,
+    "n_successful": 11
+  },
+  "gradual": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "graven": {
+    "n_context_sentences": 11,
+    "n_successful": 11
+  },
+  "grazer": {
+    "n_context_sentences": 49,
+    "n_successful": 49
+  },
+  "great": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "greengrocer": {
+    "n_context_sentences": 11,
+    "n_successful": 11
+  },
+  "grose": {
+    "n_context_sentences": 22,
+    "n_successful": 22
+  },
+  "guilders": {
+    "n_context_sentences": 45,
+    "n_successful": 45
+  },
+  "gurjara": {
+    "n_context_sentences": 11,
+    "n_successful": 11
+  },
+  "guts": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "gwenllian": {
+    "n_context_sentences": 11,
+    "n_successful": 11
+  },
+  "habitat": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "halide": {
+    "n_context_sentences": 42,
+    "n_successful": 42
+  },
+  "handmade": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "handrail": {
+    "n_context_sentences": 15,
+    "n_successful": 15
+  },
+  "hands": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "haploid": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "hardness": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "haslam": {
+    "n_context_sentences": 18,
+    "n_successful": 18
+  },
+  "hastings": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "havel": {
+    "n_context_sentences": 24,
+    "n_successful": 24
+  },
+  "head": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "hebden": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "hence": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "here": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "heterogeneity": {
+    "n_context_sentences": 14,
+    "n_successful": 14
+  },
+  "hiiumaa": {
+    "n_context_sentences": 12,
+    "n_successful": 12
+  },
+  "hippocratic": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "hired": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "hirschberg": {
+    "n_context_sentences": 14,
+    "n_successful": 14
+  },
+  "hob": {
+    "n_context_sentences": 26,
+    "n_successful": 18
+  },
+  "hockey": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "homogeneity": {
+    "n_context_sentences": 28,
+    "n_successful": 28
+  },
+  "honesty": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "honorably": {
+    "n_context_sentences": 38,
+    "n_successful": 38
+  },
+  "hopefully": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "hopelessly": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "horia": {
+    "n_context_sentences": 14,
+    "n_successful": 14
+  },
+  "host": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "houllier": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "howl": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "howling": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "huffpost": {
+    "n_context_sentences": 11,
+    "n_successful": 11
+  },
+  "humble": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "humiliate": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "humiliation": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "hummer": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "hunt": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "hurdle": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "husband": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "hybridize": {
+    "n_context_sentences": 19,
+    "n_successful": 19
+  },
+  "ieyasu": {
+    "n_context_sentences": 44,
+    "n_successful": 44
+  },
+  "illegible": {
+    "n_context_sentences": 37,
+    "n_successful": 37
+  },
+  "illicit": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "image": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "immobility": {
+    "n_context_sentences": 21,
+    "n_successful": 21
+  },
+  "immorality": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "imparts": {
+    "n_context_sentences": 27,
+    "n_successful": 27
+  },
+  "impassioned": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "impede": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "impersonal": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "implicit": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "inaccuracy": {
+    "n_context_sentences": 38,
+    "n_successful": 38
+  },
+  "inarticulate": {
+    "n_context_sentences": 32,
+    "n_successful": 32
+  },
+  "incision": {
+    "n_context_sentences": 38,
+    "n_successful": 38
+  },
+  "incoherence": {
+    "n_context_sentences": 19,
+    "n_successful": 19
+  },
+  "incomparable": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "incomplete": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "incomprehensible": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "increase": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "indentured": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "independent": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "individualized": {
+    "n_context_sentences": 46,
+    "n_successful": 46
+  },
+  "individually": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "indochina": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "indoors": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "induces": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "inedible": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "ineffectual": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "inefficiency": {
+    "n_context_sentences": 46,
+    "n_successful": 46
+  },
+  "inefficient": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "ineligible": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "inexpensively": {
+    "n_context_sentences": 18,
+    "n_successful": 18
+  },
+  "inexperienced": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "inexplicable": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "infer": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "infernal": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "inflexible": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "ingrained": {
+    "n_context_sentences": 40,
+    "n_successful": 40
+  },
+  "ingress": {
+    "n_context_sentences": 17,
+    "n_successful": 17
+  },
+  "inhabited": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "innovator": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "inpatient": {
+    "n_context_sentences": 45,
+    "n_successful": 45
+  },
+  "insanely": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "inside": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "insipid": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "inspiring": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "instrumental": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "integrated": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "intellectual": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "intelligence": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "interbreed": {
+    "n_context_sentences": 38,
+    "n_successful": 38
+  },
+  "interior": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "intermediate": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "internal": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "interregional": {
+    "n_context_sentences": 10,
+    "n_successful": 10
+  },
+  "interrogators": {
+    "n_context_sentences": 46,
+    "n_successful": 46
+  },
+  "invariant": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "invisible": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "irrational": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "irrecoverable": {
+    "n_context_sentences": 15,
+    "n_successful": 15
+  },
+  "irreligious": {
+    "n_context_sentences": 23,
+    "n_successful": 23
+  },
+  "isaacson": {
+    "n_context_sentences": 31,
+    "n_successful": 31
+  },
+  "islas": {
+    "n_context_sentences": 31,
+    "n_successful": 31
+  },
+  "itu": {
+    "n_context_sentences": 16,
+    "n_successful": 16
+  },
+  "jeer": {
+    "n_context_sentences": 10,
+    "n_successful": 10
+  },
+  "jet": {
+    "n_context_sentences": 50,
+    "n_successful": 49
+  },
+  "jfk": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "karam": {
+    "n_context_sentences": 22,
+    "n_successful": 22
+  },
+  "katainen": {
+    "n_context_sentences": 20,
+    "n_successful": 20
+  },
+  "kayaking": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "kennedy": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "keohane": {
+    "n_context_sentences": 10,
+    "n_successful": 10
+  },
+  "keychain": {
+    "n_context_sentences": 10,
+    "n_successful": 10
+  },
+  "kirkbride": {
+    "n_context_sentences": 11,
+    "n_successful": 11
+  },
+  "knave": {
+    "n_context_sentences": 26,
+    "n_successful": 26
+  },
+  "knut": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "kohler": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "kreisky": {
+    "n_context_sentences": 13,
+    "n_successful": 13
+  },
+  "kronborg": {
+    "n_context_sentences": 11,
+    "n_successful": 11
+  },
+  "kuter": {
+    "n_context_sentences": 10,
+    "n_successful": 10
+  },
+  "kutner": {
+    "n_context_sentences": 14,
+    "n_successful": 14
+  },
+  "kvapil": {
+    "n_context_sentences": 27,
+    "n_successful": 27
+  },
+  "kwajalein": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "laibach": {
+    "n_context_sentences": 11,
+    "n_successful": 11
+  },
+  "lakewood": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "lamina": {
+    "n_context_sentences": 32,
+    "n_successful": 32
+  },
+  "lapse": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "laths": {
+    "n_context_sentences": 19,
+    "n_successful": 19
+  },
+  "lavarack": {
+    "n_context_sentences": 26,
+    "n_successful": 26
+  },
+  "leaderboards": {
+    "n_context_sentences": 31,
+    "n_successful": 31
+  },
+  "leased": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "legato": {
+    "n_context_sentences": 19,
+    "n_successful": 19
+  },
+  "legged": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "legible": {
+    "n_context_sentences": 30,
+    "n_successful": 30
+  },
+  "leipheimer": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "lesbos": {
+    "n_context_sentences": 38,
+    "n_successful": 38
+  },
+  "libbing": {
+    "n_context_sentences": 13,
+    "n_successful": 13
+  },
+  "licit": {
+    "n_context_sentences": 14,
+    "n_successful": 4
+  },
+  "lieberstein": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "lief": {
+    "n_context_sentences": 10,
+    "n_successful": 10
+  },
+  "light": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "liked": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "linchpin": {
+    "n_context_sentences": 18,
+    "n_successful": 18
+  },
+  "line": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "linear": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "linger": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "livery": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "livid": {
+    "n_context_sentences": 37,
+    "n_successful": 37
+  },
+  "loading": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "loaf": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "loath": {
+    "n_context_sentences": 27,
+    "n_successful": 27
+  },
+  "local": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "located": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "look": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "loom": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "lose": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "loth": {
+    "n_context_sentences": 11,
+    "n_successful": 11
+  },
+  "lothian": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "lovingly": {
+    "n_context_sentences": 39,
+    "n_successful": 39
+  },
+  "lower": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "lowered": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "luckless": {
+    "n_context_sentences": 24,
+    "n_successful": 24
+  },
+  "lucky": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "macfie": {
+    "n_context_sentences": 46,
+    "n_successful": 46
+  },
+  "mahadev": {
+    "n_context_sentences": 12,
+    "n_successful": 12
+  },
+  "maine": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "majorly": {
+    "n_context_sentences": 10,
+    "n_successful": 10
+  },
+  "manageable": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "mancroft": {
+    "n_context_sentences": 16,
+    "n_successful": 16
+  },
+  "manetho": {
+    "n_context_sentences": 30,
+    "n_successful": 30
+  },
+  "manjula": {
+    "n_context_sentences": 34,
+    "n_successful": 34
+  },
+  "margaret": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "mark": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "marketing": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "maronite": {
+    "n_context_sentences": 41,
+    "n_successful": 41
+  },
+  "marshaling": {
+    "n_context_sentences": 13,
+    "n_successful": 13
+  },
+  "martanda": {
+    "n_context_sentences": 11,
+    "n_successful": 11
+  },
+  "masato": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "mash": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "mastercard": {
+    "n_context_sentences": 33,
+    "n_successful": 33
+  },
+  "mat": {
+    "n_context_sentences": 50,
+    "n_successful": 46
+  },
+  "materiality": {
+    "n_context_sentences": 10,
+    "n_successful": 10
+  },
+  "maxi": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "maximal": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "maximization": {
+    "n_context_sentences": 14,
+    "n_successful": 14
+  },
+  "mcgrory": {
+    "n_context_sentences": 27,
+    "n_successful": 27
+  },
+  "mclaughlin": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "me": {
+    "n_context_sentences": 50,
+    "n_successful": 47
+  },
+  "meaningful": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "meaningless": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "meddling": {
+    "n_context_sentences": 48,
+    "n_successful": 48
+  },
+  "medulla": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "menace": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "mental": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "militant": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "milutin": {
+    "n_context_sentences": 21,
+    "n_successful": 21
+  },
+  "mini": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "minimal": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "minimization": {
+    "n_context_sentences": 20,
+    "n_successful": 20
+  },
+  "miniskirt": {
+    "n_context_sentences": 19,
+    "n_successful": 19
+  },
+  "minute": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "miscarriage": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "misinterpreting": {
+    "n_context_sentences": 15,
+    "n_successful": 15
+  },
+  "mistrust": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "miz": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "mlr": {
+    "n_context_sentences": 14,
+    "n_successful": 14
+  },
+  "mobility": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "mogador": {
+    "n_context_sentences": 32,
+    "n_successful": 32
+  },
+  "moment": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "monophyletic": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "monstrosity": {
+    "n_context_sentences": 30,
+    "n_successful": 30
+  },
+  "moonless": {
+    "n_context_sentences": 10,
+    "n_successful": 10
+  },
+  "moonlit": {
+    "n_context_sentences": 27,
+    "n_successful": 27
+  },
+  "moot": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "morality": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "morristown": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "mortification": {
+    "n_context_sentences": 24,
+    "n_successful": 24
+  },
+  "mosher": {
+    "n_context_sentences": 19,
+    "n_successful": 19
+  },
+  "moveable": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "mug": {
+    "n_context_sentences": 47,
+    "n_successful": 47
+  },
+  "multiply": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "mytilene": {
+    "n_context_sentences": 23,
+    "n_successful": 23
+  },
+  "name": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "nasties": {
+    "n_context_sentences": 14,
+    "n_successful": 14
+  },
+  "nataraja": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "navigation": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "neuss": {
+    "n_context_sentences": 10,
+    "n_successful": 10
+  },
+  "neutral": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "new": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "newness": {
+    "n_context_sentences": 18,
+    "n_successful": 18
+  },
+  "newsman": {
+    "n_context_sentences": 16,
+    "n_successful": 16
+  },
+  "ngo": {
+    "n_context_sentences": 50,
+    "n_successful": 47
+  },
+  "nobles": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "noncompliance": {
+    "n_context_sentences": 14,
+    "n_successful": 14
+  },
+  "nonexistence": {
+    "n_context_sentences": 12,
+    "n_successful": 12
+  },
+  "nonlinear": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "nonviolent": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "normal": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "notability": {
+    "n_context_sentences": 44,
+    "n_successful": 44
+  },
+  "notable": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "numero": {
+    "n_context_sentences": 15,
+    "n_successful": 15
+  },
+  "nurture": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "nut": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "nuthatch": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "obedience": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "obeisance": {
+    "n_context_sentences": 15,
+    "n_successful": 15
+  },
+  "objective": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "objectively": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "oblique": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "obscurity": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "obstructed": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "obviously": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "occasional": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "occlusion": {
+    "n_context_sentences": 42,
+    "n_successful": 42
+  },
+  "ocd": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "offstage": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "ogata": {
+    "n_context_sentences": 22,
+    "n_successful": 22
+  },
+  "oglesby": {
+    "n_context_sentences": 28,
+    "n_successful": 28
+  },
+  "omnidirectional": {
+    "n_context_sentences": 10,
+    "n_successful": 10
+  },
+  "onstage": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "opaque": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "opponent": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "opposite": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "ordinal": {
+    "n_context_sentences": 46,
+    "n_successful": 46
+  },
+  "ordinate": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "ori": {
+    "n_context_sentences": 50,
+    "n_successful": 5
+  },
+  "ossification": {
+    "n_context_sentences": 20,
+    "n_successful": 20
+  },
+  "outdoors": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "outpatient": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "outset": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "outside": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "overboard": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "overpass": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "paddocks": {
+    "n_context_sentences": 17,
+    "n_successful": 17
+  },
+  "pains": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "pallium": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "panache": {
+    "n_context_sentences": 40,
+    "n_successful": 40
+  },
+  "pane": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "panelling": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "paramount": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "paranormal": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "parasite": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "parcel": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "parent": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "parkdale": {
+    "n_context_sentences": 14,
+    "n_successful": 14
+  },
+  "parkman": {
+    "n_context_sentences": 27,
+    "n_successful": 27
+  },
+  "paschal": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "passing": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "passions": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "pasta": {
+    "n_context_sentences": 50,
+    "n_successful": 48
+  },
+  "pasupathy": {
+    "n_context_sentences": 10,
+    "n_successful": 10
+  },
+  "patently": {
+    "n_context_sentences": 22,
+    "n_successful": 22
+  },
+  "patronising": {
+    "n_context_sentences": 24,
+    "n_successful": 24
+  },
+  "pats": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "penalty": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "peril": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "periodic": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "permit": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "persistence": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "personal": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "perturbed": {
+    "n_context_sentences": 47,
+    "n_successful": 47
+  },
+  "pga": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "phase": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "physical": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "piccinino": {
+    "n_context_sentences": 21,
+    "n_successful": 21
+  },
+  "pioneer": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "pitiful": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "plainfield": {
+    "n_context_sentences": 35,
+    "n_successful": 35
+  },
+  "planted": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "plow": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "plummets": {
+    "n_context_sentences": 19,
+    "n_successful": 19
+  },
+  "plunge": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "pointer": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "polyploid": {
+    "n_context_sentences": 10,
+    "n_successful": 10
+  },
+  "pombo": {
+    "n_context_sentences": 19,
+    "n_successful": 19
+  },
+  "pondering": {
+    "n_context_sentences": 46,
+    "n_successful": 46
+  },
+  "popular": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "pottstown": {
+    "n_context_sentences": 11,
+    "n_successful": 11
+  },
+  "powdery": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "predicament": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "preempt": {
+    "n_context_sentences": 28,
+    "n_successful": 28
+  },
+  "present": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "preserve": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "principality": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "pro": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "productive": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "professional": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "professionally": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "professorship": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "profit": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "profound": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "profundity": {
+    "n_context_sentences": 15,
+    "n_successful": 15
+  },
+  "prolific": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "prominence": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "promote": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "prophetstown": {
+    "n_context_sentences": 22,
+    "n_successful": 22
+  },
+  "prosecute": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "prostrate": {
+    "n_context_sentences": 39,
+    "n_successful": 39
+  },
+  "protected": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "psalter": {
+    "n_context_sentences": 37,
+    "n_successful": 37
+  },
+  "pure": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "purge": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "pursues": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "qualified": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "quandary": {
+    "n_context_sentences": 30,
+    "n_successful": 30
+  },
+  "quiet": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "quirk": {
+    "n_context_sentences": 30,
+    "n_successful": 30
+  },
+  "quiver": {
+    "n_context_sentences": 18,
+    "n_successful": 18
+  },
+  "raam": {
+    "n_context_sentences": 13,
+    "n_successful": 13
+  },
+  "raff": {
+    "n_context_sentences": 43,
+    "n_successful": 43
+  },
+  "raised": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "ramifications": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "rance": {
+    "n_context_sentences": 20,
+    "n_successful": 13
+  },
+  "ranjitsinhji": {
+    "n_context_sentences": 35,
+    "n_successful": 35
+  },
+  "rathbone": {
+    "n_context_sentences": 34,
+    "n_successful": 34
+  },
+  "rational": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "rationalise": {
+    "n_context_sentences": 13,
+    "n_successful": 13
+  },
+  "real": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "realised": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "rear": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "reasonably": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "rebound": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "rebuttals": {
+    "n_context_sentences": 12,
+    "n_successful": 12
+  },
+  "reemerged": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "reflex": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "refuelling": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "regress": {
+    "n_context_sentences": 21,
+    "n_successful": 21
+  },
+  "rehabilitate": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "reimagined": {
+    "n_context_sentences": 34,
+    "n_successful": 34
+  },
+  "reina": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "rejuvenate": {
+    "n_context_sentences": 28,
+    "n_successful": 28
+  },
+  "related": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "reliability": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "religious": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "reminding": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "reminds": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "remixes": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "renewable": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "renumbering": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "repulsive": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "require": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "resinous": {
+    "n_context_sentences": 12,
+    "n_successful": 12
+  },
+  "resolution": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "resolve": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "resonator": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "restful": {
+    "n_context_sentences": 13,
+    "n_successful": 13
+  },
+  "restless": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "retracted": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "retrograde": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "revealing": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "reverberation": {
+    "n_context_sentences": 34,
+    "n_successful": 34
+  },
+  "reverend": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "reversal": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "review": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "reward": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "ribonuclease": {
+    "n_context_sentences": 22,
+    "n_successful": 22
+  },
+  "rigour": {
+    "n_context_sentences": 29,
+    "n_successful": 29
+  },
+  "rise": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "riya": {
+    "n_context_sentences": 33,
+    "n_successful": 33
+  },
+  "rna": {
+    "n_context_sentences": 50,
+    "n_successful": 49
+  },
+  "rnase": {
+    "n_context_sentences": 23,
+    "n_successful": 23
+  },
+  "roache": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "roma": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "rome": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "rooting": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "rounded": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "rousay": {
+    "n_context_sentences": 11,
+    "n_successful": 11
+  },
+  "rouse": {
+    "n_context_sentences": 50,
+    "n_successful": 38
+  },
+  "rowboat": {
+    "n_context_sentences": 26,
+    "n_successful": 26
+  },
+  "run": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "rundstedt": {
+    "n_context_sentences": 36,
+    "n_successful": 36
+  },
+  "running": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "rurik": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "rush": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "rustication": {
+    "n_context_sentences": 21,
+    "n_successful": 21
+  },
+  "rz": {
+    "n_context_sentences": 42,
+    "n_successful": 8
+  },
+  "sack": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "sadist": {
+    "n_context_sentences": 19,
+    "n_successful": 19
+  },
+  "safeway": {
+    "n_context_sentences": 17,
+    "n_successful": 17
+  },
+  "saida": {
+    "n_context_sentences": 34,
+    "n_successful": 34
+  },
+  "sailing": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "sallies": {
+    "n_context_sentences": 13,
+    "n_successful": 13
+  },
+  "salvage": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "sangha": {
+    "n_context_sentences": 30,
+    "n_successful": 30
+  },
+  "sanosuke": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "satisfaction": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "satisfy": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "saturday": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "scarcity": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "scarred": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "scientists": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "scrawny": {
+    "n_context_sentences": 16,
+    "n_successful": 16
+  },
+  "scream": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "scripted": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "sculpted": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "sealed": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "secure": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "seedless": {
+    "n_context_sentences": 24,
+    "n_successful": 24
+  },
+  "seedy": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "segregate": {
+    "n_context_sentences": 38,
+    "n_successful": 38
+  },
+  "seljuq": {
+    "n_context_sentences": 32,
+    "n_successful": 32
+  },
+  "semimajor": {
+    "n_context_sentences": 14,
+    "n_successful": 14
+  },
+  "senio": {
+    "n_context_sentences": 15,
+    "n_successful": 15
+  },
+  "serb": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "serbian": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "servius": {
+    "n_context_sentences": 14,
+    "n_successful": 14
+  },
+  "set": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "shaft": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "shallowness": {
+    "n_context_sentences": 29,
+    "n_successful": 29
+  },
+  "shankman": {
+    "n_context_sentences": 37,
+    "n_successful": 37
+  },
+  "share": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "sharp": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "sharpen": {
+    "n_context_sentences": 22,
+    "n_successful": 22
+  },
+  "sheer": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "shell": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "shit": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "shkas": {
+    "n_context_sentences": 26,
+    "n_successful": 26
+  },
+  "shoe": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "shorted": {
+    "n_context_sentences": 17,
+    "n_successful": 17
+  },
+  "shoulder": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "sighted": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "silence": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "singly": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "sisario": {
+    "n_context_sentences": 18,
+    "n_successful": 18
+  },
+  "sit": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "situated": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "skew": {
+    "n_context_sentences": 25,
+    "n_successful": 25
+  },
+  "skip": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "slandering": {
+    "n_context_sentences": 13,
+    "n_successful": 13
+  },
+  "slew": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "slob": {
+    "n_context_sentences": 11,
+    "n_successful": 11
+  },
+  "sluggish": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "slumberland": {
+    "n_context_sentences": 15,
+    "n_successful": 15
+  },
+  "smart": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "smirke": {
+    "n_context_sentences": 23,
+    "n_successful": 23
+  },
+  "snagged": {
+    "n_context_sentences": 15,
+    "n_successful": 15
+  },
+  "so": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "soaked": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "solution": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "some": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "son": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "sooty": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "sopranos": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "sound": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "spaceman": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "spate": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "spearheads": {
+    "n_context_sentences": 36,
+    "n_successful": 36
+  },
+  "speck": {
+    "n_context_sentences": 19,
+    "n_successful": 19
+  },
+  "spectacled": {
+    "n_context_sentences": 19,
+    "n_successful": 19
+  },
+  "specter": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "spectroscope": {
+    "n_context_sentences": 10,
+    "n_successful": 10
+  },
+  "speculation": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "spherical": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "spleen": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "splendor": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "splendour": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "spokesperson": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "squeezing": {
+    "n_context_sentences": 42,
+    "n_successful": 42
+  },
+  "squirt": {
+    "n_context_sentences": 32,
+    "n_successful": 32
+  },
+  "staccato": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "stainforth": {
+    "n_context_sentences": 29,
+    "n_successful": 29
+  },
+  "stands": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "stay": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "steep": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "stewed": {
+    "n_context_sentences": 23,
+    "n_successful": 23
+  },
+  "stillbirth": {
+    "n_context_sentences": 15,
+    "n_successful": 15
+  },
+  "stockhausen": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "storytellers": {
+    "n_context_sentences": 40,
+    "n_successful": 40
+  },
+  "streamline": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "streeter": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "strive": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "structured": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "stupid": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "stupidity": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "subjective": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "subjectively": {
+    "n_context_sentences": 30,
+    "n_successful": 30
+  },
+  "substantial": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "sucker": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "sudden": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "sulky": {
+    "n_context_sentences": 11,
+    "n_successful": 11
+  },
+  "sullen": {
+    "n_context_sentences": 42,
+    "n_successful": 42
+  },
+  "supervised": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "surfacing": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "survey": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "susannah": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "switch": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "tailfins": {
+    "n_context_sentences": 10,
+    "n_successful": 10
+  },
+  "tamimi": {
+    "n_context_sentences": 34,
+    "n_successful": 34
+  },
+  "tamina": {
+    "n_context_sentences": 22,
+    "n_successful": 22
+  },
+  "tampering": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "tarp": {
+    "n_context_sentences": 23,
+    "n_successful": 23
+  },
+  "tarry": {
+    "n_context_sentences": 10,
+    "n_successful": 10
+  },
+  "tegucigalpa": {
+    "n_context_sentences": 23,
+    "n_successful": 23
+  },
+  "telegraphed": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "telling": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "temenggung": {
+    "n_context_sentences": 16,
+    "n_successful": 16
+  },
+  "tender": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "terminal": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "terminated": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "termination": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "terrifies": {
+    "n_context_sentences": 11,
+    "n_successful": 11
+  },
+  "test": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "testis": {
+    "n_context_sentences": 13,
+    "n_successful": 13
+  },
+  "there": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "thermally": {
+    "n_context_sentences": 23,
+    "n_successful": 23
+  },
+  "theropod": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "thin": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "thoi": {
+    "n_context_sentences": 20,
+    "n_successful": 20
+  },
+  "threesome": {
+    "n_context_sentences": 21,
+    "n_successful": 21
+  },
+  "tillage": {
+    "n_context_sentences": 13,
+    "n_successful": 13
+  },
+  "timberland": {
+    "n_context_sentences": 11,
+    "n_successful": 11
+  },
+  "timekeeper": {
+    "n_context_sentences": 28,
+    "n_successful": 28
+  },
+  "timer": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "tirades": {
+    "n_context_sentences": 10,
+    "n_successful": 10
+  },
+  "tirailleurs": {
+    "n_context_sentences": 19,
+    "n_successful": 19
+  },
+  "titled": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "tomari": {
+    "n_context_sentences": 11,
+    "n_successful": 11
+  },
+  "top": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "topmost": {
+    "n_context_sentences": 29,
+    "n_successful": 29
+  },
+  "touched": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "tough": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "tower": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "trace": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "transportable": {
+    "n_context_sentences": 16,
+    "n_successful": 16
+  },
+  "triadic": {
+    "n_context_sentences": 24,
+    "n_successful": 24
+  },
+  "trimix": {
+    "n_context_sentences": 13,
+    "n_successful": 13
+  },
+  "triplet": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "tripping": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "trivia": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "trooping": {
+    "n_context_sentences": 29,
+    "n_successful": 29
+  },
+  "troubled": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "trust": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "twentieth": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "twinkle": {
+    "n_context_sentences": 37,
+    "n_successful": 37
+  },
+  "twitch": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "tycoon": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "udi": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "unable": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "unaffected": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "unambitious": {
+    "n_context_sentences": 14,
+    "n_successful": 14
+  },
+  "unarmed": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "unashamed": {
+    "n_context_sentences": 18,
+    "n_successful": 18
+  },
+  "unbound": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "uncertainty": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "unchained": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "uncharged": {
+    "n_context_sentences": 16,
+    "n_successful": 16
+  },
+  "unclean": {
+    "n_context_sentences": 36,
+    "n_successful": 36
+  },
+  "uncontrolled": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "uncontroversial": {
+    "n_context_sentences": 36,
+    "n_successful": 36
+  },
+  "uncover": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "under": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "undesirable": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "undetermined": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "undiluted": {
+    "n_context_sentences": 16,
+    "n_successful": 16
+  },
+  "unearthly": {
+    "n_context_sentences": 19,
+    "n_successful": 19
+  },
+  "unequivocal": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "unexpected": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "unfairly": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "unfettered": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "unflattering": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "unforced": {
+    "n_context_sentences": 19,
+    "n_successful": 19
+  },
+  "unfunded": {
+    "n_context_sentences": 14,
+    "n_successful": 14
+  },
+  "uninhabited": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "uninspiring": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "unintelligible": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "unjustifiable": {
+    "n_context_sentences": 15,
+    "n_successful": 15
+  },
+  "unloading": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "unmanageable": {
+    "n_context_sentences": 40,
+    "n_successful": 40
+  },
+  "unpopular": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "unproductive": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "unprotected": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "unqualified": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "unreasonably": {
+    "n_context_sentences": 22,
+    "n_successful": 22
+  },
+  "unrelated": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "unreliability": {
+    "n_context_sentences": 43,
+    "n_successful": 43
+  },
+  "unresolved": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "unsafe": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "unscripted": {
+    "n_context_sentences": 48,
+    "n_successful": 48
+  },
+  "unsealed": {
+    "n_context_sentences": 30,
+    "n_successful": 30
+  },
+  "unstructured": {
+    "n_context_sentences": 20,
+    "n_successful": 20
+  },
+  "untouched": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "untroubled": {
+    "n_context_sentences": 17,
+    "n_successful": 17
+  },
+  "unwarranted": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "unwary": {
+    "n_context_sentences": 17,
+    "n_successful": 17
+  },
+  "uphill": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "uppermost": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "upriver": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "upstream": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "utmost": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "utter": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "vaillant": {
+    "n_context_sentences": 12,
+    "n_successful": 12
+  },
+  "value": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "vardy": {
+    "n_context_sentences": 12,
+    "n_successful": 12
+  },
+  "varietal": {
+    "n_context_sentences": 30,
+    "n_successful": 30
+  },
+  "vaunted": {
+    "n_context_sentences": 15,
+    "n_successful": 15
+  },
+  "vazquez": {
+    "n_context_sentences": 19,
+    "n_successful": 19
+  },
+  "venis": {
+    "n_context_sentences": 23,
+    "n_successful": 23
+  },
+  "veto": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "vierville": {
+    "n_context_sentences": 11,
+    "n_successful": 11
+  },
+  "violent": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "visible": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "vocal": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "vomit": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "voroshilov": {
+    "n_context_sentences": 34,
+    "n_successful": 34
+  },
+  "w": {
+    "n_context_sentences": 50,
+    "n_successful": 41
+  },
+  "wallops": {
+    "n_context_sentences": 12,
+    "n_successful": 12
+  },
+  "wane": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "warfield": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "wary": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "watchung": {
+    "n_context_sentences": 13,
+    "n_successful": 13
+  },
+  "watery": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "wax": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "weeping": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "west": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "westerly": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "wheelbarrow": {
+    "n_context_sentences": 19,
+    "n_successful": 19
+  },
+  "while": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "whimsy": {
+    "n_context_sentences": 38,
+    "n_successful": 38
+  },
+  "whiskered": {
+    "n_context_sentences": 21,
+    "n_successful": 21
+  },
+  "wife": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "williams": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "willing": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "windermere": {
+    "n_context_sentences": 36,
+    "n_successful": 36
+  },
+  "winkle": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "wipeout": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "wisdom": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "wolfpack": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "woodland": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "woollen": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "woon": {
+    "n_context_sentences": 48,
+    "n_successful": 48
+  },
+  "worn": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "worst": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "worth": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "wretched": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "wrights": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "wuppertal": {
+    "n_context_sentences": 13,
+    "n_successful": 13
+  },
+  "xangsane": {
+    "n_context_sentences": 26,
+    "n_successful": 26
+  },
+  "yagna": {
+    "n_context_sentences": 15,
+    "n_successful": 15
+  },
+  "ye": {
+    "n_context_sentences": 50,
+    "n_successful": 49
+  },
+  "yoke": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "zardari": {
+    "n_context_sentences": 50,
+    "n_successful": 50
+  },
+  "zo": {
+    "n_context_sentences": 50,
+    "n_successful": 4
+  }
+}

@@ -108,7 +108,7 @@ def _summarize_synant(obj: dict[str, Any] | None) -> str:
 def _run_pytest(repo_root: Path) -> tuple[int, str]:
     try:
         res = subprocess.run(
-            ["python", "-m", "pytest", "-q"],
+            ["python", "-m", "pytest", "-q", "tests"],
             cwd=str(repo_root),
             capture_output=True,
             text=True,
@@ -246,4 +246,3 @@ def generate_report(
 
     write_json(paths.results_dir / "run_report.meta.json", {"report_path": str(out_path)})
     print(f"Wrote report: {out_path}")
-

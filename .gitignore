@@ -8,7 +8,11 @@ __pycache__/
 .venv/
 venv/
 
+.dvc
+/metrics
+/models
+
 # Local data / outputs (kept in-repo per lab instructions)
-data/
+/data
 artifacts/
 

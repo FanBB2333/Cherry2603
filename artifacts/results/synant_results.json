@@ -1,0 +1,240 @@
+{
+  "glove": {
+    "label": "GloVe",
+    "raw": {
+      "similarities": {
+        "n_syn_pairs": 195,
+        "n_ant_pairs": 194,
+        "n_random_pairs": 194,
+        "syn_mean_ci": {
+          "estimate": 0.3544111682761771,
+          "low": 0.32247823181066615,
+          "high": 0.3865610482926385
+        },
+        "ant_mean_ci": {
+          "estimate": 0.49357311301336615,
+          "low": 0.46430045694650446,
+          "high": 0.522595169704369
+        },
+        "rnd_mean_ci": {
+          "estimate": 0.053769409620669936,
+          "low": 0.028965760901217472,
+          "high": 0.07693251919813848
+        }
+      },
+      "neighbourhood": {
+        "n_targets": 50,
+        "rate_antonym_in_topk": 0.48
+      }
+    },
+    "deaniso": {
+      "similarities": {
+        "method": "remove_pcs",
+        "pcs": 2,
+        "n_syn_pairs": 195,
+        "n_ant_pairs": 194,
+        "n_random_pairs": 194,
+        "syn_mean_ci": {
+          "estimate": 0.2763355201199794,
+          "low": 0.244772045683259,
+          "high": 0.3079215192952408
+        },
+        "ant_mean_ci": {
+          "estimate": 0.40472791487466275,
+          "low": 0.37565090923003625,
+          "high": 0.43568161117469834
+        },
+        "rnd_mean_ci": {
+          "estimate": -0.00466608647473118,
+          "low": -0.019938476413690013,
+          "high": 0.0111247149881782
+        }
+      },
+      "neighbourhood": {
+        "method": "remove_pcs",
+        "pcs": 2,
+        "n_targets": 50,
+        "rate_antonym_in_topk": 0.54
+      }
+    }
+  },
+  "bert": {
+    "layer_1": {
+      "label": "BERT layer 1",
+      "raw": {
+        "similarities": {
+          "n_syn_pairs": 195,
+          "n_ant_pairs": 194,
+          "n_random_pairs": 194,
+          "syn_mean_ci": {
+            "estimate": 0.23409008078086072,
+            "low": 0.21288934747378033,
+            "high": 0.25684310228396684
+          },
+          "ant_mean_ci": {
+            "estimate": 0.3224554317283262,
+            "low": 0.2977996393270099,
+            "high": 0.34568751399818154
+          },
+          "rnd_mean_ci": {
+            "estimate": 0.10527535466256446,
+            "low": 0.09675654243514634,
+            "high": 0.11363215045043334
+          }
+        },
+        "neighbourhood": {
+          "n_targets": 50,
+          "rate_antonym_in_topk": 0.5
+        }
+      },
+      "deaniso": {
+        "similarities": {
+          "method": "remove_pcs",
+          "pcs": 2,
+          "n_syn_pairs": 195,
+          "n_ant_pairs": 194,
+          "n_random_pairs": 194,
+          "syn_mean_ci": {
+            "estimate": 0.13951561512718072,
+            "low": 0.11689276566030457,
+            "high": 0.1647343156292127
+          },
+          "ant_mean_ci": {
+            "estimate": 0.23886615726088664,
+            "low": 0.21191604153286742,
+            "high": 0.2639897045002501
+          },
+          "rnd_mean_ci": {
+            "estimate": 0.002317207281071346,
+            "low": -0.0044616821691044,
+            "high": 0.009007822605912524
+          }
+        },
+        "neighbourhood": {
+          "method": "remove_pcs",
+          "pcs": 2,
+          "n_targets": 50,
+          "rate_antonym_in_topk": 0.48
+        }
+      }
+    },
+    "layer_6": {
+      "label": "BERT layer 6",
+      "raw": {
+        "similarities": {
+          "n_syn_pairs": 195,
+          "n_ant_pairs": 194,
+          "n_random_pairs": 194,
+          "syn_mean_ci": {
+            "estimate": 0.49533017117243544,
+            "low": 0.4760165360493538,
+            "high": 0.5156832867707961
+          },
+          "ant_mean_ci": {
+            "estimate": 0.5553335668807177,
+            "low": 0.5357919707126224,
+            "high": 0.5754504544833272
+          },
+          "rnd_mean_ci": {
+            "estimate": 0.328636071193464,
+            "low": 0.31847134278607125,
+            "high": 0.3392277813142108
+          }
+        },
+        "neighbourhood": {
+          "n_targets": 50,
+          "rate_antonym_in_topk": 0.38
+        }
+      },
+      "deaniso": {
+        "similarities": {
+          "method": "remove_pcs",
+          "pcs": 2,
+          "n_syn_pairs": 195,
+          "n_ant_pairs": 194,
+          "n_random_pairs": 194,
+          "syn_mean_ci": {
+            "estimate": 0.23797219397935968,
+            "low": 0.21173131702026018,
+            "high": 0.26435775810506384
+          },
+          "ant_mean_ci": {
+            "estimate": 0.3190541362003471,
+            "low": 0.2909764717681065,
+            "high": 0.34812760509949026
+          },
+          "rnd_mean_ci": {
+            "estimate": -0.0052224048273817915,
+            "low": -0.0142488132911127,
+            "high": 0.003349695655939736
+          }
+        },
+        "neighbourhood": {
+          "method": "remove_pcs",
+          "pcs": 2,
+          "n_targets": 50,
+          "rate_antonym_in_topk": 0.48
+        }
+      }
+    },
+    "layer_12": {
+      "label": "BERT layer 12",
+      "raw": {
+        "similarities": {
+          "n_syn_pairs": 195,
+          "n_ant_pairs": 194,
+          "n_random_pairs": 194,
+          "syn_mean_ci": {
+            "estimate": 0.6203391640614241,
+            "low": 0.601715207252747,
+            "high": 0.6379832474085001
+          },
+          "ant_mean_ci": {
+            "estimate": 0.670547008975265,
+            "low": 0.655102909533019,
+            "high": 0.687019916078479
+          },
+          "rnd_mean_ci": {
+            "estimate": 0.44160548036860436,
+            "low": 0.4299365801295054,
+            "high": 0.45282301383534657
+          }
+        },
+        "neighbourhood": {
+          "n_targets": 50,
+          "rate_antonym_in_topk": 0.38
+        }
+      },
+      "deaniso": {
+        "similarities": {
+          "method": "remove_pcs",
+          "pcs": 2,
+          "n_syn_pairs": 195,
+          "n_ant_pairs": 194,
+          "n_random_pairs": 194,
+          "syn_mean_ci": {
+            "estimate": 0.2760051702108448,
+            "low": 0.24540499277794972,
+            "high": 0.30534480675462244
+          },
+          "ant_mean_ci": {
+            "estimate": 0.3566992636722004,
+            "low": 0.3289006622604181,
+            "high": 0.3864170455556248
+          },
+          "rnd_mean_ci": {
+            "estimate": -0.0013259213878929173,
+            "low": -0.012032278255348276,
+            "high": 0.009561087840600372
+          }
+        },
+        "neighbourhood": {
+          "method": "remove_pcs",
+          "pcs": 2,
+          "n_targets": 50,
+          "rate_antonym_in_topk": 0.48
+        }
+      }
+    }
+  }
+}

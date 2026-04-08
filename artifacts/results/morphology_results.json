@@ -1,0 +1,472 @@
+{
+  "glove": {
+    "label": "GloVe",
+    "raw": {
+      "intra_vs_inter": {
+        "n_intra": 280,
+        "n_inter": 280,
+        "cliffs_delta": {
+          "estimate": 0.8975765306122448,
+          "low": 0.8610459183673469,
+          "high": 0.9276275510204082
+        },
+        "cohen_d": {
+          "estimate": 2.3662251028036323,
+          "low": 2.147184790833895,
+          "high": 2.618033399258672
+        },
+        "p_mannwhitney": 1.9644318165920838e-75
+      },
+      "offsets": {
+        "ed": {
+          "n_offsets": 17,
+          "mean_cos": {
+            "estimate": 0.3345054090023041,
+            "low": 0.30210989713668823,
+            "high": 0.4493101239204407
+          }
+        },
+        "ing": {
+          "n_offsets": 25,
+          "mean_cos": {
+            "estimate": 0.34398967027664185,
+            "low": 0.29587721824645996,
+            "high": 0.4469432532787323
+          }
+        },
+        "s": {
+          "n_offsets": 28,
+          "mean_cos": {
+            "estimate": 0.3171984553337097,
+            "low": 0.24070172011852264,
+            "high": 0.4479843080043793
+          }
+        }
+      },
+      "probing_tense_ed": {
+        "n_examples": 34,
+        "accuracy": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0
+        },
+        "macro_f1": {
+          "estimate": 1.0,
+          "low": 1.0,
+          "high": 1.0
+        }
+      }
+    },
+    "deaniso": {
+      "intra_vs_inter": {
+        "method": "remove_pcs",
+        "pcs": 2,
+        "n_intra": 280,
+        "n_inter": 280,
+        "cliffs_delta": {
+          "estimate": 0.9621683673469388,
+          "low": 0.941734693877551,
+          "high": 0.9790051020408164
+        },
+        "cohen_d": {
+          "estimate": 3.2128489633352753,
+          "low": 2.9285896739221844,
+          "high": 3.5437257111862617
+        },
+        "p_mannwhitney": 2.1249039630589175e-86
+      },
+      "offsets": {
+        "ed": {
+          "n_offsets": 17,
+          "mean_cos": {
+            "estimate": 0.2899010479450226,
+            "low": 0.2619917094707489,
+            "high": 0.415277898311615
+          }
+        },
+        "ing": {
+          "n_offsets": 25,
+          "mean_cos": {
+            "estimate": 0.3430081009864807,
+            "low": 0.29714056849479675,
+            "high": 0.4556245505809784
+          }
+        },
+        "s": {
+          "n_offsets": 28,
+          "mean_cos": {
+            "estimate": 0.2765359580516815,
+            "low": 0.20714761316776276,
+            "high": 0.41136434674263
+          }
+        }
+      },
+      "probing_tense_ed": {
+        "n_examples": 34,
+        "accuracy": {
+          "estimate": 0.9416666666666667,
+          "low": 0.875,
+          "high": 1.0
+        },
+        "macro_f1": {
+          "estimate": 0.9403174603174603,
+          "low": 0.8717460317460317,
+          "high": 1.0
+        }
+      }
+    }
+  },
+  "bert": {
+    "layer_1": {
+      "label": "BERT layer 1",
+      "raw": {
+        "intra_vs_inter": {
+          "n_intra": 280,
+          "n_inter": 280,
+          "cliffs_delta": {
+            "estimate": 0.9930867346938775,
+            "low": 0.9860204081632653,
+            "high": 0.9979591836734694
+          },
+          "cohen_d": {
+            "estimate": 4.473050186191405,
+            "low": 4.038405064296704,
+            "high": 5.012304822852312
+          },
+          "p_mannwhitney": 6.458306038043788e-92
+        },
+        "offsets": {
+          "ed": {
+            "n_offsets": 17,
+            "mean_cos": {
+              "estimate": 0.22386755049228668,
+              "low": 0.2269880622625351,
+              "high": 0.32879212498664856
+            }
+          },
+          "ing": {
+            "n_offsets": 25,
+            "mean_cos": {
+              "estimate": 0.21946243941783905,
+              "low": 0.2099185734987259,
+              "high": 0.30130329728126526
+            }
+          },
+          "s": {
+            "n_offsets": 28,
+            "mean_cos": {
+              "estimate": 0.25430935621261597,
+              "low": 0.2263227254152298,
+              "high": 0.3402273952960968
+            }
+          }
+        },
+        "probing_tense_ed": {
+          "n_examples": 34,
+          "accuracy": {
+            "estimate": 1.0,
+            "low": 1.0,
+            "high": 1.0
+          },
+          "macro_f1": {
+            "estimate": 1.0,
+            "low": 1.0,
+            "high": 1.0
+          }
+        }
+      },
+      "deaniso": {
+        "intra_vs_inter": {
+          "method": "remove_pcs",
+          "pcs": 2,
+          "n_intra": 280,
+          "n_inter": 280,
+          "cliffs_delta": {
+            "estimate": 0.9943622448979592,
+            "low": 0.9887755102040816,
+            "high": 0.9982908163265306
+          },
+          "cohen_d": {
+            "estimate": 4.520222042966869,
+            "low": 4.092348333448483,
+            "high": 5.062027656960377
+          },
+          "p_mannwhitney": 3.791239293883997e-92
+        },
+        "offsets": {
+          "ed": {
+            "n_offsets": 17,
+            "mean_cos": {
+              "estimate": 0.2248162180185318,
+              "low": 0.22663260996341705,
+              "high": 0.3298323452472687
+            }
+          },
+          "ing": {
+            "n_offsets": 25,
+            "mean_cos": {
+              "estimate": 0.2169954627752304,
+              "low": 0.20686180889606476,
+              "high": 0.3027387857437134
+            }
+          },
+          "s": {
+            "n_offsets": 28,
+            "mean_cos": {
+              "estimate": 0.2522011995315552,
+              "low": 0.22470131516456604,
+              "high": 0.3401348292827606
+            }
+          }
+        },
+        "probing_tense_ed": {
+          "n_examples": 34,
+          "accuracy": {
+            "estimate": 1.0,
+            "low": 1.0,
+            "high": 1.0
+          },
+          "macro_f1": {
+            "estimate": 1.0,
+            "low": 1.0,
+            "high": 1.0
+          }
+        }
+      }
+    },
+    "layer_6": {
+      "label": "BERT layer 6",
+      "raw": {
+        "intra_vs_inter": {
+          "n_intra": 280,
+          "n_inter": 280,
+          "cliffs_delta": {
+            "estimate": 0.9784438775510204,
+            "low": 0.9652551020408163,
+            "high": 0.9887755102040816
+          },
+          "cohen_d": {
+            "estimate": 3.591223154154795,
+            "low": 3.295925403189858,
+            "high": 3.9503765287990187
+          },
+          "p_mannwhitney": 2.784215947620276e-89
+        },
+        "offsets": {
+          "ed": {
+            "n_offsets": 17,
+            "mean_cos": {
+              "estimate": 0.30197277665138245,
+              "low": 0.2870836555957794,
+              "high": 0.41333600878715515
+            }
+          },
+          "ing": {
+            "n_offsets": 25,
+            "mean_cos": {
+              "estimate": 0.36038580536842346,
+              "low": 0.32063472270965576,
+              "high": 0.4603012204170227
+            }
+          },
+          "s": {
+            "n_offsets": 28,
+            "mean_cos": {
+              "estimate": 0.29806065559387207,
+              "low": 0.2588045597076416,
+              "high": 0.3949093222618103
+            }
+          }
+        },
+        "probing_tense_ed": {
+          "n_examples": 34,
+          "accuracy": {
+            "estimate": 1.0,
+            "low": 1.0,
+            "high": 1.0
+          },
+          "macro_f1": {
+            "estimate": 1.0,
+            "low": 1.0,
+            "high": 1.0
+          }
+        }
+      },
+      "deaniso": {
+        "intra_vs_inter": {
+          "method": "remove_pcs",
+          "pcs": 2,
+          "n_intra": 280,
+          "n_inter": 280,
+          "cliffs_delta": {
+            "estimate": 0.9975765306122449,
+            "low": 0.995,
+            "high": 0.9994642857142857
+          },
+          "cohen_d": {
+            "estimate": 4.552127584449371,
+            "low": 4.192851154939954,
+            "high": 4.98023198135038
+          },
+          "p_mannwhitney": 9.87416037618796e-93
+        },
+        "offsets": {
+          "ed": {
+            "n_offsets": 17,
+            "mean_cos": {
+              "estimate": 0.3009437620639801,
+              "low": 0.2843618094921112,
+              "high": 0.4125596880912781
+            }
+          },
+          "ing": {
+            "n_offsets": 25,
+            "mean_cos": {
+              "estimate": 0.3628188669681549,
+              "low": 0.3214127719402313,
+              "high": 0.46000936627388
+            }
+          },
+          "s": {
+            "n_offsets": 28,
+            "mean_cos": {
+              "estimate": 0.2957339882850647,
+              "low": 0.25382739305496216,
+              "high": 0.3917141556739807
+            }
+          }
+        },
+        "probing_tense_ed": {
+          "n_examples": 34,
+          "accuracy": {
+            "estimate": 1.0,
+            "low": 1.0,
+            "high": 1.0
+          },
+          "macro_f1": {
+            "estimate": 1.0,
+            "low": 1.0,
+            "high": 1.0
+          }
+        }
+      }
+    },
+    "layer_12": {
+      "label": "BERT layer 12",
+      "raw": {
+        "intra_vs_inter": {
+          "n_intra": 280,
+          "n_inter": 280,
+          "cliffs_delta": {
+            "estimate": 0.9599744897959184,
+            "low": 0.9376020408163265,
+            "high": 0.9782908163265306
+          },
+          "cohen_d": {
+            "estimate": 3.2078902578423123,
+            "low": 2.9170245665432653,
+            "high": 3.542513028461102
+          },
+          "p_mannwhitney": 5.154994986879388e-86
+        },
+        "offsets": {
+          "ed": {
+            "n_offsets": 17,
+            "mean_cos": {
+              "estimate": 0.44326937198638916,
+              "low": 0.40406107902526855,
+              "high": 0.5513665080070496
+            }
+          },
+          "ing": {
+            "n_offsets": 25,
+            "mean_cos": {
+              "estimate": 0.43621140718460083,
+              "low": 0.3783358633518219,
+              "high": 0.5394357442855835
+            }
+          },
+          "s": {
+            "n_offsets": 28,
+            "mean_cos": {
+              "estimate": 0.4588191509246826,
+              "low": 0.38387808203697205,
+              "high": 0.568160355091095
+            }
+          }
+        },
+        "probing_tense_ed": {
+          "n_examples": 34,
+          "accuracy": {
+            "estimate": 1.0,
+            "low": 1.0,
+            "high": 1.0
+          },
+          "macro_f1": {
+            "estimate": 1.0,
+            "low": 1.0,
+            "high": 1.0
+          }
+        }
+      },
+      "deaniso": {
+        "intra_vs_inter": {
+          "method": "remove_pcs",
+          "pcs": 2,
+          "n_intra": 280,
+          "n_inter": 280,
+          "cliffs_delta": {
+            "estimate": 0.9855357142857143,
+            "low": 0.9761479591836735,
+            "high": 0.9929081632653062
+          },
+          "cohen_d": {
+            "estimate": 3.990619367464203,
+            "low": 3.652161958157033,
+            "high": 4.376692331696395
+          },
+          "p_mannwhitney": 1.4913617267386648e-90
+        },
+        "offsets": {
+          "ed": {
+            "n_offsets": 17,
+            "mean_cos": {
+              "estimate": 0.447155624628067,
+              "low": 0.4067668616771698,
+              "high": 0.5607616305351257
+            }
+          },
+          "ing": {
+            "n_offsets": 25,
+            "mean_cos": {
+              "estimate": 0.4423877000808716,
+              "low": 0.3818627893924713,
+              "high": 0.5520352125167847
+            }
+          },
+          "s": {
+            "n_offsets": 28,
+            "mean_cos": {
+              "estimate": 0.4619125425815582,
+              "low": 0.3877873420715332,
+              "high": 0.5657830834388733
+            }
+          }
+        },
+        "probing_tense_ed": {
+          "n_examples": 34,
+          "accuracy": {
+            "estimate": 1.0,
+            "low": 1.0,
+            "high": 1.0
+          },
+          "macro_f1": {
+            "estimate": 1.0,
+            "low": 1.0,
+            "high": 1.0
+          }
+        }
+      }
+    }
+  }
+}

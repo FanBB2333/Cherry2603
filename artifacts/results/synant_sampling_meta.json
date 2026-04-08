@@ -1,0 +1,7 @@
+{
+  "n_syn_candidates": 34400,
+  "n_ant_candidates": 1730,
+  "n_syn_pairs": 200,
+  "n_ant_pairs": 200,
+  "n_overlap_targets": 57
+}

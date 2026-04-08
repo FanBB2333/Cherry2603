@@ -15,7 +15,7 @@ def _find_full_word_spans(sentence: str, word: str) -> list[tuple[int, int]]:
     """
 
     w = re.escape(word)
-    pattern = re.compile(rf"(?i)(?<!\\w){w}(?!\\w)")
+    pattern = re.compile(rf"(?i)(?<!\w){w}(?!\w)")
     return [(m.start(), m.end()) for m in pattern.finditer(sentence)]
 
 

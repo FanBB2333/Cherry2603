@@ -50,7 +50,8 @@ def cliffs_delta(x: Sequence[float], y: Sequence[float]) -> float:
         less += bisect.bisect_left(ys, v)
         greater += n_y - bisect.bisect_right(ys, v)
 
-    return (greater - less) / float(n_x * n_y)
+    # `less` counts y-values smaller than x, i.e. x > y.
+    return (less - greater) / float(n_x * n_y)
 
 
 @dataclass(frozen=True)
@@ -119,4 +120,3 @@ def mann_whitney_u(x: Sequence[float], y: Sequence[float]) -> float:
 
     res = mannwhitneyu(x, y, alternative="two-sided")
     return float(res.pvalue)
-

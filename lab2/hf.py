@@ -42,14 +42,48 @@ class _LocalTextDataset:
                 yield {"text": line.rstrip("\n")}
 
 
+class _LocalParquetDataset:
+    """
+    Minimal dataset-like wrapper over local parquet shards with a `text` column.
+    """
+
+    def __init__(self, paths: list[Path]):
+        self.paths = paths
+
+    def __iter__(self):
+        import pandas as pd
+
+        for path in self.paths:
+            df = pd.read_parquet(path, columns=["text"])
+            for text in df["text"].tolist():
+                yield {"text": text}
+
+
+def _local_wikitext_parquet_files(paths: ProjectPaths) -> list[Path]:
+    local_root = paths.data_dir / "Salesforce" / "wikitext" / "wikitext-103-v1"
+    return sorted(local_root.glob("train-*.parquet")) if local_root.exists() else []
+
+
 def load_wikitext103_train(paths: ProjectPaths):
     configure_hf_cache(paths)
+
+    local_parquet_files = _local_wikitext_parquet_files(paths)
 
     try:
         from datasets import load_dataset  # lazy import
 
+        if local_parquet_files:
+            return load_dataset(
+                "parquet",
+                data_files={"train": [str(p) for p in local_parquet_files]},
+                split="train",
+                cache_dir=str(paths.hf_cache_dir),
+            )
         return load_dataset("wikitext", "wikitext-103-v1", split="train", cache_dir=str(paths.hf_cache_dir))
     except ModuleNotFoundError:
+        if local_parquet_files:
+            return _LocalParquetDataset(local_parquet_files)
+
         # Offline fallback: user-provided text file in repo.
         candidates = [
             paths.data_dir / "wikitext103_train.txt",
@@ -71,7 +105,10 @@ def load_bert_model_and_tokenizer(model_name: str, paths: ProjectPaths):
 
     from transformers import AutoModel, AutoTokenizer  # lazy import
 
-    tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=True, cache_dir=str(paths.hf_cache_dir))
-    model = AutoModel.from_pretrained(model_name, cache_dir=str(paths.hf_cache_dir))
+    local_model_dir = paths.repo_root / "models" / model_name
+    source = str(local_model_dir) if local_model_dir.exists() else model_name
+
+    tokenizer = AutoTokenizer.from_pretrained(source, use_fast=True, cache_dir=str(paths.hf_cache_dir))
+    model = AutoModel.from_pretrained(source, cache_dir=str(paths.hf_cache_dir))
     model.eval()
     return model, tokenizer
