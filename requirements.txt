@@ -4,3 +4,7 @@ transformers
 torch
 python-Levenshtein
 matplotlib
+dvc
+phonemizer
+protobuf
+PyYAML

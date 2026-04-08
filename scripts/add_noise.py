@@ -3,12 +3,32 @@
 Add noise to audio files at specified SNR levels.
 """
 import argparse
+import hashlib
 import json
 from pathlib import Path
 import tempfile
 import shutil
 import numpy as np
 import soundfile as sf
+
+
+def stable_uint32(text: str) -> int:
+    """Deterministic 32-bit hash for seeding RNGs.
+
+    Python's built-in hash() is randomized between processes by default, which
+    breaks reproducibility. This produces a stable value across runs/platforms.
+    """
+    digest = hashlib.blake2b(text.encode('utf-8'), digest_size=4).digest()
+    return int.from_bytes(digest, byteorder='little', signed=False)
+
+
+def compute_md5(file_path: Path) -> str:
+    """Compute MD5 checksum of a file."""
+    md5_hash = hashlib.md5()
+    with open(file_path, 'rb') as f:
+        for chunk in iter(lambda: f.read(4096), b''):
+            md5_hash.update(chunk)
+    return md5_hash.hexdigest()
 
 
 def add_noise(
@@ -63,7 +83,7 @@ def process_manifest(input_manifest: Path, output_manifest: Path,
 
             # Add noise to audio file
             # Use utt_id hash as part of seed for reproducibility
-            file_seed = seed + hash(entry['utt_id']) % (2**31)
+            file_seed = (seed + stable_uint32(f"{entry['utt_id']}|{snr_db}")) % (2**32)
             add_noise_to_file(
                 entry['wav_path'],
                 str(noisy_path),
@@ -71,10 +91,13 @@ def process_manifest(input_manifest: Path, output_manifest: Path,
                 seed=file_seed
             )
 
+            noisy_md5 = compute_md5(noisy_path)
+
             # Update manifest entry
             new_entry = entry.copy()
             new_entry['wav_path'] = str(noisy_path)
             new_entry['snr_db'] = snr_db
+            new_entry['audio_md5'] = noisy_md5
 
             manifest_entries.append(new_entry)
 

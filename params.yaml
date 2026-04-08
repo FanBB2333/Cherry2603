@@ -10,6 +10,34 @@ snr_levels:
   - 0
   - -10
 
+# Cartesian product of languages × snr_levels for noisy pipeline stages.
+# Update this list when you add/remove languages or SNR levels.
+noisy_cases:
+  en_20:
+    lang: en
+    snr: 20
+  en_10:
+    lang: en
+    snr: 10
+  en_0:
+    lang: en
+    snr: 0
+  en_-10:
+    lang: en
+    snr: -10
+  fr_20:
+    lang: fr
+    snr: 20
+  fr_10:
+    lang: fr
+    snr: 10
+  fr_0:
+    lang: fr
+    snr: 0
+  fr_-10:
+    lang: fr
+    snr: -10
+
 # Audio parameters
 sample_rate: 16000
 

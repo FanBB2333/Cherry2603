@@ -17,30 +17,30 @@
 | Condition | PER | Relative Increase |
 |-----------|-----|-------------------|
 | Clean (no noise) | 0.634 | - |
-| SNR 20dB | 0.644 | +1.6% |
-| SNR 10dB | 0.706 | +11.4% |
-| SNR 0dB | 0.819 | +29.2% |
-| SNR -10dB | 0.967 | +52.5% |
+| SNR 20dB | 0.652 | +2.8% |
+| SNR 10dB | 0.712 | +12.3% |
+| SNR 0dB | 0.826 | +30.3% |
+| SNR -10dB | 0.968 | +52.6% |
 
 ### French (FR)
 
 | Condition | PER | Relative Increase |
 |-----------|-----|-------------------|
 | Clean (no noise) | 0.776 | - |
-| SNR 20dB | 0.788 | +1.5% |
-| SNR 10dB | 0.855 | +10.2% |
-| SNR 0dB | 0.921 | +18.7% |
-| SNR -10dB | 0.964 | +24.2% |
+| SNR 20dB | 0.790 | +1.8% |
+| SNR 10dB | 0.850 | +9.5% |
+| SNR 0dB | 0.918 | +18.3% |
+| SNR -10dB | 0.959 | +23.6% |
 
 ### Cross-Language Comparison
 
 | Condition | EN PER | FR PER | Difference (FR - EN) |
 |-----------|--------|--------|----------------------|
 | Clean | 0.634 | 0.776 | +0.142 (+22.4%) |
-| SNR 20dB | 0.644 | 0.788 | +0.144 (+22.4%) |
-| SNR 10dB | 0.706 | 0.855 | +0.149 (+21.1%) |
-| SNR 0dB | 0.819 | 0.921 | +0.102 (+12.5%) |
-| SNR -10dB | 0.967 | 0.964 | -0.003 (-0.3%) |
+| SNR 20dB | 0.652 | 0.790 | +0.138 (+21.2%) |
+| SNR 10dB | 0.712 | 0.850 | +0.138 (+19.4%) |
+| SNR 0dB | 0.826 | 0.918 | +0.092 (+11.1%) |
+| SNR -10dB | 0.968 | 0.959 | -0.009 (-0.9%) |
 
 ## Analysis
 
@@ -141,20 +141,20 @@ $ dvc repro -f
    | Metric File | PER | Count | Condition |
    |-------------|-----|-------|-----------|
    | metrics/en/clean.json | 0.634 | 100 | Clean audio |
-   | metrics/en/snr_20.json | 0.644 | 100 | SNR 20dB |
-   | metrics/en/snr_10.json | 0.706 | 100 | SNR 10dB |
-   | metrics/en/snr_0.json | 0.819 | 100 | SNR 0dB |
-   | metrics/en/snr_-10.json | 0.967 | 100 | SNR -10dB |
+   | metrics/en/snr_20.json | 0.652 | 100 | SNR 20dB |
+   | metrics/en/snr_10.json | 0.712 | 100 | SNR 10dB |
+   | metrics/en/snr_0.json | 0.826 | 100 | SNR 0dB |
+   | metrics/en/snr_-10.json | 0.968 | 100 | SNR -10dB |
 
    **French Results:**
 
    | Metric File | PER | Count | Condition |
    |-------------|-----|-------|-----------|
    | metrics/fr/clean.json | 0.776 | 100 | Clean audio |
-   | metrics/fr/snr_20.json | 0.788 | 100 | SNR 20dB |
-   | metrics/fr/snr_10.json | 0.855 | 100 | SNR 10dB |
-   | metrics/fr/snr_0.json | 0.921 | 100 | SNR 0dB |
-   | metrics/fr/snr_-10.json | 0.964 | 100 | SNR -10dB |
+   | metrics/fr/snr_20.json | 0.790 | 100 | SNR 20dB |
+   | metrics/fr/snr_10.json | 0.850 | 100 | SNR 10dB |
+   | metrics/fr/snr_0.json | 0.918 | 100 | SNR 0dB |
+   | metrics/fr/snr_-10.json | 0.959 | 100 | SNR -10dB |
 
 ## Data Outputs
 
