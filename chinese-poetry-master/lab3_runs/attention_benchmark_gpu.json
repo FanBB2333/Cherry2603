@@ -1,0 +1,22 @@
+{
+  "device": "cuda",
+  "batch_size": 32,
+  "context_length": 256,
+  "hidden_dim": 256,
+  "num_heads": 8,
+  "dropout": 0.1,
+  "warmup_iters": 5,
+  "benchmark_iters": 30,
+  "results": [
+    {
+      "backend": "sdpa",
+      "avg_step_time_ms": 2.1719660668168217,
+      "peak_memory_mb": 114.0166015625
+    },
+    {
+      "backend": "classic",
+      "avg_step_time_ms": 3.857934601061667,
+      "peak_memory_mb": 331.31298828125
+    }
+  ]
+}

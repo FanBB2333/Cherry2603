@@ -1,0 +1,23 @@
+{
+  "checkpoint": "lab3_runs/main_songci5mb_gpu_baseline_5k/checkpoints/model_step_05000.pt",
+  "feature_batches": 20,
+  "batch_size": 16,
+  "probe_epochs": 8,
+  "probe_lr": 0.01,
+  "trained_model": {
+    "accuracy": 0.9879638671875,
+    "precision": 0.9963036678987773,
+    "recall": 0.8795180722891566,
+    "f1": 0.9342754299426743,
+    "positive_rate": 0.09726562350988388
+  },
+  "random_init_model": {
+    "accuracy": 0.95166015625,
+    "precision": 0.9949908925318761,
+    "recall": 0.525999037072701,
+    "f1": 0.6881889763779527,
+    "positive_rate": 0.10141601413488388
+  },
+  "f1_gain": 0.24608645356472159,
+  "accuracy_gain": 0.036303710937499956
+}
